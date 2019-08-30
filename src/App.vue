@@ -7,7 +7,7 @@
 
 <script>
 import Home from './views/Home/Home'
-
+console.log(process.env, "another secret");
 export default {
   name: 'app',
   components: {
