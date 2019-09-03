@@ -1,0 +1,16 @@
+.home {
+  background-image: url("../images/pexels-photo-1677358.jpeg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+}
