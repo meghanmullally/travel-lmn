@@ -4,12 +4,18 @@
   </div>
 </template>
 <script>
+import moment from 'moment';
+
   export default {
     name: 'home',
     
     data() {
       return {
-        msg: "Home Page"
+        msg: "Home Page",
+        question: "Where would you like to go?",
+        clock: "Current Time:",
+        currentTime: null,
+        childData: ""
       }
     }
   }
