@@ -18,5 +18,5 @@
 
 
 <style>
-
+    @import './assets/style/style.css';
 </style>
