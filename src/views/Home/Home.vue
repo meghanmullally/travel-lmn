@@ -4,9 +4,24 @@
     <section class="home-section">
       <!-- area for the clock  -->
       <p class="time" v-text="currentTime"></p>
-
       <!-- where would you like to go? -->
     <p class="question">{{question}}</p>
+    </section>
+    <section class="trip-section">
+
+
+<md-field>
+      <label>Destination</label>
+      <md-input v-model="withLabel" placeholder="EX: Seattle"></md-input>
+    </md-field>
+
+<md-datepicker v-model="selectedDate" class="departure">
+      <label class="date">Select Departure date</label>
+    </md-datepicker>
+
+    <!-- <md-datepicker v-model="selectedDate" class="arrival">
+      <label class="date">Select Arrival date</label>
+    </md-datepicker> -->
 
     </section>
 
@@ -18,14 +33,14 @@ import moment from 'moment';
 
   export default {
     name: 'home',
-    
     data() {
       return {
         msg: "Home Page",
         question: "Where would you like to go?",
         clock: "Current Time:",
         currentTime: null,
-        childData: ""
+        childData: "",
+        selectedDate: null
       }
     },
     methods: {
