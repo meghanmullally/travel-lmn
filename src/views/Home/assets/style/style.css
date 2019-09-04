@@ -1,0 +1,48 @@
+.home {
+  background-image: url("../images/pexels-photo-1677358.jpeg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+}
+
+section.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 auto;
+  /* background: transparent; */
+}
+
+p.time {
+  font-size: 10em;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+p.question {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+section.trip-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 auto;
+  margin-left: 45px;
+  margin-right: 45px;
+  background-color: rgba(255, 255, 255, 0.829);
+}
+
