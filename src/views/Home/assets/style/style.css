@@ -14,3 +14,24 @@ h1 {
   color: white;
   font-weight: bold;
 }
+
+section.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 auto;
+  /* background: transparent; */
+}
+
+p.time {
+  font-size: 10em;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+p.question {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: bold;
+}
