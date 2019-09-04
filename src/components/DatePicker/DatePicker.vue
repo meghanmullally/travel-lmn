@@ -1,11 +1,11 @@
 <template>
-  <div id="datePicker">
+  <div class="datePicker">
 
     <section class="datePick-section">
-      
-<md-datepicker v-model="selectedDate" class="departure">
-      <label class="date">Select Departure date</label>
-    </md-datepicker> -->
+
+      <md-datepicker v-model="selectedDate" class="departure">
+            <label class="date">Select Departure date</label>
+          </md-datepicker> 
 
     <!-- <md-datepicker v-model="selectedDate" class="arrival">
       <label class="date">Select Arrival date</label>
@@ -24,7 +24,9 @@ export default {
   name: "datePicker",
   data() {
     return {
-    msg: 'datePicker'
+    msg: 'datePicker',
+    childData: "",
+    selectedDate: null
     }
   }
 };
