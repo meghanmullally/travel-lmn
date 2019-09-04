@@ -22,6 +22,9 @@
 <script>
 export default {
   name: "datePicker",
+  components: {
+    
+  },
   data() {
     return {
     msg: 'datePicker',

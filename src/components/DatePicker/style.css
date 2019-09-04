@@ -1,0 +1,28 @@
+.datePicker {
+  /* background-color: rgba(245, 245, 245, 0.822); */
+  padding: 25px;
+  margin: 10px;
+}
+
+label.date {
+  color: black;
+}
+
+
+.md-datepicker-header {
+  background-color: gainsboro;
+  color: black;
+}
+
+.md-datepicker-body {
+  background-color: white;
+}
+
+.md-button {
+  color: rgb(25, 25, 175);
+  font-weight: bold;
+}
+
+.md-datepicker-selected {
+  color: blue;
+}

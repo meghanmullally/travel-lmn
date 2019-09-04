@@ -6,23 +6,30 @@
       <p class="time" v-text="currentTime"></p>
       <!-- where would you like to go? -->
     <p class="question">{{question}}</p>
+</section>
 
-
-
+<section class="trip">
+  
+<DestinationPicker/>
 <DatePicker/>
 
-    </section>
+</section>
+
+
 
   </div>
 </template>
 <script>
 import moment from 'moment';
 import DatePicker from '../../components/DatePicker/DatePicker';
+import DestinationPicker from '../../components/DestinationPicker/DestinationPicker';
+
 
   export default {
     name: 'home',
     components: {
-      DatePicker
+      DatePicker,
+      DestinationPicker
     },
     data() {
       return {
