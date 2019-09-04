@@ -10,8 +10,10 @@
 
 <section class="trip">
   
+<OriginPicker/> 
 <DestinationPicker/>
-<DatePicker/>
+<DepartureDatePicker/>
+<ArrivalDatePicker/>
 
 </section>
 
@@ -21,15 +23,19 @@
 </template>
 <script>
 import moment from 'moment';
-import DatePicker from '../../components/DatePicker/DatePicker';
+import ArrivalDatePicker from '../../components/ArrivalDatePicker/ArrivalDatePicker';
+import DepartureDatePicker from '../../components/DepartureDatePicker/DepartureDatePicker';
 import DestinationPicker from '../../components/DestinationPicker/DestinationPicker';
+import OriginPicker from '../../components/OriginPicker/OriginPicker';
 
 
   export default {
     name: 'home',
     components: {
-      DatePicker,
-      DestinationPicker
+      ArrivalDatePicker,
+      DepartureDatePicker,
+      DestinationPicker,
+      OriginPicker
     },
     data() {
       return {
