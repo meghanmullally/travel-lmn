@@ -10,14 +10,14 @@
     <section class="trip-section">
 
 
-<md-field>
+<!-- <md-field>
       <label>Destination</label>
       <md-input v-model="withLabel" placeholder="EX: Seattle"></md-input>
     </md-field>
 
 <md-datepicker v-model="selectedDate" class="departure">
       <label class="date">Select Departure date</label>
-    </md-datepicker>
+    </md-datepicker> -->
 
     <!-- <md-datepicker v-model="selectedDate" class="arrival">
       <label class="date">Select Arrival date</label>
