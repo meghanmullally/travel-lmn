@@ -63,5 +63,5 @@ import OriginPicker from '../../components/OriginPicker/OriginPicker';
 
 
 <style>
-    @import './assets/style/style.css';
+    @import './assets/styles/style.css';
 </style>

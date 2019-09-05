@@ -6,3 +6,16 @@
     <p>fav destinations?</p>
   </div>
 </template>
+<script>
+export default {
+  name: 'Profile',
+  date(){
+    return {
+      msg: "Profile page"
+  }
+  }
+}
+</script>
+<style>
+@import './assets/styles/style.css';
+</style>
