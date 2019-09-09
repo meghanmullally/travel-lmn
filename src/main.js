@@ -1,8 +1,12 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from "./router";
-import moment from 'moment';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
 import Vuex from 'vuex';
+import moment from 'moment';
+
+
 // import Vuetify from "./plugins/vuetify";
 
 
@@ -14,7 +18,9 @@ Vue.use(MdDatepicker);
 Vue.use(MdButton);
 Vue.use(MdField);
 
+Vue.use(VueAxios, axios)
 Vue.use(Vuex)
+
 
 Vue.prototype.moment = moment
 
