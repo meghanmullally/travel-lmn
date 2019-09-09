@@ -1,11 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from "./router";
-import Vuetify from 'vuetify/lib'
-
-Vue.use(Vuetify)
-
-export default new Vuetify({ ... })
+import Vuetify from "./plugins/vuetify";
 
 
 // import { MdDatepicker, MdButton, MdField} from 'vue-material/dist/components'
@@ -21,5 +17,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  Vuetify,
   render: h => h(App),
 }).$mount('#app')
