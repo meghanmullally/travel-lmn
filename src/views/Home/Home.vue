@@ -9,12 +9,11 @@
 </section>
 
 <section class="trip">
-  
 <OriginPicker/> 
 <DestinationPicker/>
 <DepartureDatePicker/>
 <ArrivalDatePicker/>
-
+<HomeButton/>
 </section>
 
 
@@ -27,7 +26,7 @@ import ArrivalDatePicker from '../../components/ArrivalDatePicker/ArrivalDatePic
 import DepartureDatePicker from '../../components/DepartureDatePicker/DepartureDatePicker';
 import DestinationPicker from '../../components/DestinationPicker/DestinationPicker';
 import OriginPicker from '../../components/OriginPicker/OriginPicker';
-
+import HomeButton from '../../components/HomeButton/HomeButton';
 
   export default {
     name: 'home',
@@ -35,7 +34,8 @@ import OriginPicker from '../../components/OriginPicker/OriginPicker';
       ArrivalDatePicker,
       DepartureDatePicker,
       DestinationPicker,
-      OriginPicker
+      OriginPicker,
+      HomeButton
     },
     data() {
       return {
