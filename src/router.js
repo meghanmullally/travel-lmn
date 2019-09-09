@@ -2,9 +2,9 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from './views/Home/Home';
 import Destination from './views/Destination/Destination';
-import Activities from './views/Activities';
-import profile from './views/Profile';
-import chat from './views/Chat';
+import Activities from './views/Activities/Activities';
+import profile from './views/Profile/Profile';
+import chat from './views/Chat/Chat';
 
 
 Vue.use(Router);
