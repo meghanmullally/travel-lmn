@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <Home/>
-    <!-- <Destination/>
-    <Activities/>
-    <Profile/>
-    <Chat/>
-    <router-view></router-view> -->
+    <router-view></router-view>
   </div>
 </template>
 
