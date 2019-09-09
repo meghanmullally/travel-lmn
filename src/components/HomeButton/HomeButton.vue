@@ -1,7 +1,7 @@
 <template>
   <div class="HomeButton">
       <section class="HomeButton">
-      <md-button class="home-btn">Submit</md-button> 
+      <md-button to="/destination" class="home-btn">Submit</md-button> 
       </section>
       
   </div>
