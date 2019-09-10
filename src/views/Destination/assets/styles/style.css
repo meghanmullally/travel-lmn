@@ -1,6 +1,18 @@
-.popHeader {
+.popHeader, .flightHeader {
   color: black;
   font-weight: bold;
+}
+
+#desContent, #desPrice {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 25px;
+  padding: 0 auto;
 }
 
 #desItems {
@@ -30,3 +42,4 @@
   margin: 25px;
   padding: 0 auto;
 }
+

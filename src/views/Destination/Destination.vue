@@ -4,10 +4,11 @@
     <ToolBar/>
     <!-- Destination content -->
     <section class="md-layout md-gutter md-alignment-center" id="desContent">
-      <h2 class="popHeader">Popular Destinations</h2>
+      <h3 class="popHeader">Popular Destinations</h3>
       <PopularDestination/>
     </section>
-    <section class="md-layout md-gutter md-alignment-space-around-center" id="desPrice">
+      <section class="md-layout md-gutter md-alignment-space-around-center" id="desPrice">
+        <h3 class="flightHeader">Flight Options</h3>
       <PriceContainer/>
     </section>
   </div>
