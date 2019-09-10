@@ -1,32 +1,33 @@
 <template>
   <div id="app">
-    <Home/>
-    <router-view></router-view>
+<!-- <NavBar/> -->
+<!-- <router-link></router-link> -->
+<Home/>
   </div>
 </template>
 
 <script>
-import Home from './views/Home/Home';
+// import NavBar from './components/Navbar/Navbar'
+import Home from './views/Home/Home'
 
 export default {
   name: 'app',
   components: {
-    Home,
-    // Destination,
-    // Activities,
-    // Profile,
-    // Chat
-  },
-  data(){
-    return {
-      msg: "Welcome to LMN Travel",
-      // Home: {},
-      // Destination: {},
-      // Activities: {},
-      // Profile: {},
-      // Chat: {}
-    }
+    // NavBar
+  Home
   }
+  // },
+  // data() {
+  //     return {
+  //       msg: 'Welcome to our LMN Travel App',
+  //       home: {},
+  //       destination: {},
+  //       activities: {},
+  //       profile: {},
+  //       chat: {}
+
+  //     }
+  //   }
 }
 </script>
 

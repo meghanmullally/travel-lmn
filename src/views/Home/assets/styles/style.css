@@ -49,3 +49,21 @@ section.trip {
   margin-right: 250px;
   background-color: rgba(255, 255, 255, 0.726);
 }
+
+
+/*  navigation  */
+
+#navigation {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#drawer, #nav-list {
+  background-color: transparent;
+  /* margin: 10px; */
+  padding: 0 auto;
+}
+
+/* #nav-list {
+  background-color: transparent;
+} */

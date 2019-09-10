@@ -5,21 +5,21 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 import Vuex from 'vuex';
 import moment from 'moment';
-
-
-// import Vuetify from "./plugins/vuetify";
-
-
-import { MdDatepicker, MdButton, MdField} from 'vue-material/dist/components'
+import { MdDatepicker, MdButton, MdField, MdList, MdIcon, MdToolbar, MdDrawer} from 'vue-material/dist/components'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
 
 Vue.use(MdDatepicker);
 Vue.use(MdButton);
 Vue.use(MdField);
+Vue.use(MdList);
+Vue.use(MdIcon);
+Vue.use(MdDrawer);
+Vue.use(MdToolbar);
 
-Vue.use(VueAxios, axios)
-Vue.use(Vuex)
+
+Vue.use(VueAxios, axios);
+Vue.use(Vuex);
 
 
 Vue.prototype.moment = moment
@@ -51,12 +51,9 @@ export const store = new Vuex.Store({
   }
 })
 
-
-
 new Vue({
   router,
   moment,
   store,
-  // Vuetify,
   render: h => h(App),
 }).$mount('#app')
