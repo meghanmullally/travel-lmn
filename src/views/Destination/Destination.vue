@@ -1,16 +1,24 @@
 <template>
   <div class="Destination">
-    <h1>This is the Destination page</h1>
-    <NavBar/>
+    <!-- navigation  -->
+    <ToolBar/>
+    <!-- Destination content -->
+    <section class="md-layout md-gutter md-alignment-center" id="desContent">
+      <h2 class="popHeader">Popular Destinations</h2>
+      <PopularDestination/>
+    </section>
   </div>
 </template>
 <script>
-import NavBar from '../../components/Navbar/Navbar';
+import ToolBar from '../../components/ToolBar/ToolBar';
+import PopularDestination from '../../components/PopularDestinations/PopularDestination';
+
 
 export default {
   name: 'Destination',
   components: {
-    NavBar,
+    ToolBar,
+    PopularDestination,
     },
   date(){
     return {
@@ -20,4 +28,5 @@ export default {
 }
 </script>
 <style>
+    @import './assets/styles/style.css';
 </style>

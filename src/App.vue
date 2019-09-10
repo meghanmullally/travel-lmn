@@ -2,19 +2,22 @@
   <div id="app">
 <!-- <NavBar/> -->
 <!-- <router-link></router-link> -->
-<Home/>
+<Destination/>
+<!-- <Home/> -->
   </div>
 </template>
 
 <script>
 // import NavBar from './components/Navbar/Navbar'
-import Home from './views/Home/Home'
+import Destination from './views/Destination/Destination'
+// import Home from './views/Home/Home'
 
 export default {
   name: 'app',
   components: {
     // NavBar
-  Home
+  Destination
+  // Home
   }
   // },
   // data() {

@@ -1,0 +1,19 @@
+.popHeader {
+  color: black;
+  font-weight: bold;
+}
+
+#desItems {
+  background-color: transparent;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 0 auto;
+}
+
+.desCard {
+  width: 325px;
+  height: auto;
+}
