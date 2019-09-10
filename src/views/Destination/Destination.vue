@@ -3,6 +3,7 @@
     <!-- navigation  -->
     <ToolBar/>
     <!-- Destination content -->
+    <article class="container">
     <section class="md-layout md-gutter md-alignment-center" id="desContent">
       <h3 class="popHeader">Popular Destinations</h3>
       <PopularDestination/>
@@ -11,6 +12,7 @@
         <h3 class="flightHeader">Flight Options</h3>
       <PriceContainer/>
     </section>
+    </article>
   </div>
 </template>
 <script>

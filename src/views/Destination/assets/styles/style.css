@@ -1,9 +1,25 @@
-.popHeader, .flightHeader {
-  color: black;
-  font-weight: bold;
+.Destination {
+  background-color: rgb(234, 246, 250);
 }
 
-#desContent, #desPrice {
+h3 {
+  color: black;
+  font-weight: bold;
+  display: relative;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-content: baseline;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#desPrice  {
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -18,6 +34,7 @@
 #desItems {
   background-color: transparent;
   display: flex;
+  flex-direction: row;
   align-items: baseline;
   justify-content: center;
   flex-wrap: wrap;
@@ -30,16 +47,5 @@
 .desCard {
   width: 245px;
   height: auto;
-}
-
-#desPrice {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  margin: 25px;
-  padding: 0 auto;
 }
 

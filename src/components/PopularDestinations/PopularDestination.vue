@@ -129,7 +129,7 @@
 import ToolBar from '../../components/ToolBar/ToolBar';
 
 export default {
-  name: 'Popular Destination',
+  name: 'PopularDestination',
   components: {
     ToolBar,
     },
