@@ -1,12 +1,11 @@
 .Destination {
   background-color: rgb(234, 246, 250);
+  /* background-color: #d4d4dc; */
 }
 
 h3 {
   color: black;
-  font-weight: bold;
-  display: relative;
-  align-items: center;
+  /* font-weight: bold; */
 }
 
 .container {
@@ -22,6 +21,7 @@ h3 {
 #desPrice  {
   display: flex;
   align-items: baseline;
+  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
