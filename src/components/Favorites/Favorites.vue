@@ -1,20 +1,15 @@
 <template>
-  <div class="favorite">
-    <article class="container">
+  <div class="Favorites">
       <!-- Favorite destinations!  -->
       <section class="favorite">
       <h3>fav destinations?</h3>
+      <p>HELLO</p>
       </section>
-    </article>
-    
-    
-    
-    
   </div>
 </template>
 <script>
 export default {
-  name: 'favorite',
+  name: 'Favorites',
   date(){
     return {
       msg: "favorite"
