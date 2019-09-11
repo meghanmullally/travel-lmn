@@ -25,6 +25,7 @@ Vue.use(MdRipple);
 Vue.use(MdElevation);
 Vue.use(MdTabs);
 Vue.use(MdSubheader);
+// Vue.use(MdScrollbar);
 
 
 Vue.use(VueAxios, axios);

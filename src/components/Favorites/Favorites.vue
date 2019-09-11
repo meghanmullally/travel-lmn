@@ -2,8 +2,110 @@
   <div class="Favorites">
       <!-- Favorite destinations!  -->
       <section class="favorite">
-      <h3>fav destinations?</h3>
-      <p>HELLO</p>
+      <h3>Favorite Destinations</h3>
+      <!-- favorite 1 -->
+      <md-card>
+      <md-card-media>
+        <md-ripple>
+          <img src="./assets/images/braden-jarvis-prSogOoFmkw-unsplash.jpg" alt="Hawaii">
+        </md-ripple>
+      </md-card-media>
+
+      <md-card-actions>
+        <md-card-header>
+            <span class="md-title">Hawaii</span>
+            <span class="md-subhead"></span>
+          </md-card-header>
+        <md-button class="md-icon-button">
+          <md-icon>favorite</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>bookmark</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>share</md-icon>
+        </md-button>
+      </md-card-actions>
+    </md-card>
+    <!-- favorite 2 -->
+    <md-card>
+      <md-card-media>
+        <md-ripple>
+        <img src="./assets/images/lance-anderson-uevmkfCH98Q-unsplash.jpg" alt="Chicago Bean">
+        </md-ripple>
+      </md-card-media>
+
+      <md-card-actions>
+        <md-card-header>
+            <span class="md-title">Chicago</span>
+            <span class="md-subhead"></span>
+          </md-card-header>
+        <md-button class="md-icon-button">
+          <md-icon>favorite</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>bookmark</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>share</md-icon>
+        </md-button>
+      </md-card-actions>
+    </md-card>
+    <!-- Favorite 3 -->
+    <md-card>
+      <md-card-media>
+        <md-ripple>
+        <img src="./assets/images/tim-foster-o4mP43oPGHk-unsplash.jpg" alt="San Fran Golden Gate Bridge">
+        </md-ripple>
+      </md-card-media>
+      <md-card-actions>
+        <md-card-header>
+            <span class="md-title">San Francisco</span>
+            <span class="md-subhead"></span>
+          </md-card-header>
+        <md-button class="md-icon-button">
+          <md-icon>favorite</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>bookmark</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>share</md-icon>
+        </md-button>
+      </md-card-actions>
+    </md-card>
+    <!-- Favorite 4 -->
+    <md-card>
+      <md-card-media>
+        <md-ripple>
+        <img src="./assets/images/oakie-dpVJtfywdX4-unsplash.jpg" alt="Seattle Skyline with Space Needle">
+        </md-ripple>
+      </md-card-media>
+
+      <md-card-actions>
+        <md-card-header>
+            <span class="md-title">Seattle</span>
+            <!-- <span class="md-subhead"> Washington</span> -->
+          </md-card-header>
+        <md-button class="md-icon-button">
+          <md-icon>favorite</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>bookmark</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>share</md-icon>
+        </md-button>
+      </md-card-actions>
+    </md-card>
       </section>
   </div>
 </template>
@@ -18,5 +120,5 @@ export default {
 }
 </script>
 <style>
-/* @import './assets/styles/style.css'; */
+@import './assets/styles/style.css';
 </style>

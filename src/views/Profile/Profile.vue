@@ -1,12 +1,13 @@
 <template>
   <div class="Profile md-layout md-gutter">
-    <article class="container md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
+    <ToolBar/>
+    <!-- <article class="container"> -->
       <!-- User info container  -->
-      <section class="userInfo md-layout-item">
+      <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
         <UserInfo/>
       </section>
       <!-- Nav Tab info container  -->
-      <section class="navigationInfo md-layout-item">
+      <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="navInfo">
       <md-tabs md-sync-route>
         <!-- Itinerary Tab -->
       <md-tab id="tab-itinerary" md-label="Itinerary" to="/components/Itinerary/Itinerary" exact>
@@ -22,10 +23,11 @@
       </md-tab>
     </md-tabs>
       </section>
-    </article>
+    <!-- </article> -->
   </div>
 </template>
 <script>
+import ToolBar from '../../components/ToolBar/ToolBar';
   import Itinerary from '../../components/ItineraryContainer/Itinerary';
   import UserInfo from '../../components/UserInfo/User';
   import PastTrips from '../../components/PastTrips/PastTrips';
@@ -35,6 +37,7 @@
 export default {
   name: 'Profile',
   components: {
+    ToolBar,
     Itinerary,
     UserInfo,
     PastTrips,
