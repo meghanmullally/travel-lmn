@@ -12,7 +12,10 @@
         <UserInfo/>
       </aside>
 
-
+  <!-- Picked Activities  -->
+  <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pickedInfo">
+  <PickedActivities/>
+  </section>
       <!-- Favorties Tab -->
     <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favInfo">
 
@@ -21,7 +24,7 @@
       <!-- Favorties Activities -->
     <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favActivitiesInfo">
         <FavoriteActivities/>
-        
+
       </section>
       <!-- Past Trips Tab -->
     <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pastInfo">
@@ -38,6 +41,7 @@
   import PastTrips from '../../components/PastTrips/PastTrips';
   import Favorites from '../../components/Favorites/Favorites';
   import FavoriteActivities from '../../components/FavoriteActivities/FavoriteActivities';
+  import PickedActivities from '../../components/PickedActivities';
 
 
 export default {
@@ -49,6 +53,7 @@ export default {
     PastTrips,
     Favorites,
     FavoriteActivities,
+    PickedActivities
   },
   date(){
     return {

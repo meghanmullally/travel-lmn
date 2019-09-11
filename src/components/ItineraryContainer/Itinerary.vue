@@ -22,18 +22,6 @@
               <span class="value">815</span>
             </div>
             </div>
-            <div class="col">
-            <div class="item">
-              <h2 class="name">Gate</h2>
-              <span class="value">8C</span>
-            </div>
-            </div>
-            <div class="col">
-            <div class="item">
-              <h2 class="name">Seat</h2>
-              <span class="value">24E</span>
-            </div>
-            </div>
             </div>
             <!-- SECOND ROW -->
             <div class="row">
