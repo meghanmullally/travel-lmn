@@ -1,6 +1,6 @@
 <template>
   <div class="Activities">
-    <h1>This is the Youtube and Map page??</h1>
+    <h1>This is the Youtube and Map page?</h1>
   </div>
 </template>
 <script>
@@ -14,5 +14,5 @@ export default {
 }
 </script>
 <style>
-@import './assets/styles/style.css';
+/* @import './assets/styles/style.css'; */
 </style>
