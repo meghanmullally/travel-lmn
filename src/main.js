@@ -5,7 +5,7 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 import Vuex from 'vuex';
 import moment from 'moment';
-import { MdDatepicker, MdButton, MdField, MdList, MdIcon, MdToolbar, MdDrawer, MdLayout, MdCard, MdDivider, MdTable, MdContent, MdRipple, MdElevation} from 'vue-material/dist/components'
+import { MdDatepicker, MdButton, MdField, MdList, MdIcon, MdToolbar, MdDrawer, MdLayout, MdCard, MdDivider, MdTable, MdContent, MdRipple, MdElevation, MdTabs, MdSubheader} from 'vue-material/dist/components'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
 
@@ -23,6 +23,8 @@ Vue.use(MdTable);
 Vue.use(MdContent);
 Vue.use(MdRipple);
 Vue.use(MdElevation);
+Vue.use(MdTabs);
+Vue.use(MdSubheader);
 
 
 Vue.use(VueAxios, axios);

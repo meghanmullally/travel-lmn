@@ -1,0 +1,27 @@
+.Profile, body {
+  background-color: rgb(234, 246, 250);
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.userInfo {
+  float: right;
+  width: 30%;
+  height: auto;
+  margin: 25px;
+  padding: 0 auto;
+
+}
+
+.navigationInfo {
+  float: left;
+  width: 63%;
+  width: 100%;
+  height: auto;
+  margin: 25px;
+  padding: 0 auto;
+}
