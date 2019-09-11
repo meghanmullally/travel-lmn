@@ -6,15 +6,15 @@
 <!-- <Home/> -->
 <!-- <Profile/> -->
 
-<nav class="navbar navbar-expand-lg fixed-top row">
+<nav class="navbar navbar-expand-lg fixed-top row" id="appNav">
 
       <!-- <router-link tag="li" class="col" class-active="active" to="/" exact>MAIN</router-link> -->
-      <router-link tag="li" class="col" class-active="active" to="/Home" exact>home</router-link>
-      <router-link tag="li" class="col" class-active="active" to="Destination" exact>destination</router-link>
-      <router-link tag="li" class="col" class-active="active" to="/Profile" exact>profile</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/Home" exact> Home</router-link>
+      <router-link tag="li" class="col" class-active="active" to="Destination" exact> <md-icon class="icon">card_travel</md-icon> Destination</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/Profile" exact>        <md-icon class="icon">supervisor_account</md-icon> Profile</router-link>
 
-      <router-link tag="li" class="col" class-active="active" to="/Activities" exact>activities</router-link>
-      <router-link tag="li" class="col" class-active="active" to="/Chat" exact>chat</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/Activities" exact> <md-icon class="icon">explore</md-icon>Activities</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/Chat" exact>            <md-icon class="icon">chat</md-icon> Chat</router-link>
       <!-- <router-link tag="li" class="col" class-active="active" to="/contact" exact>contact</router-link> -->
     </nav>
 
@@ -81,4 +81,14 @@ export default {
   a {
     color: #42b983;
   }
+
+  #appNav {
+    background-color: transparent;
+    color: black;
+  }
+
+  .icon {
+    padding-right: 10px;
+  }
+
 </style>
