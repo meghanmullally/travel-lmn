@@ -2,16 +2,16 @@
   background-color: rgb(234, 246, 250);
 }
 
-
-/* .container {
+/* 
+.everything {
   display: block;
   margin: 0 auto;
   padding: 0 auto;
 } */
 
 #userInfo {
-  float: left;
-  width: 100%;
+  float: right;
+  width: 348px;
   height: auto;
   margin: 25px;
   padding: 0 auto; 
@@ -27,7 +27,7 @@
   padding: 0 auto; */
 }
 
-#navInfo {
+#favinfo {
   /* background-color: rgb(234, 246, 250);
   display: flex;
   align-items: baseline;

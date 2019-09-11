@@ -1,33 +1,34 @@
 <template>
   <div class="Profile md-layout md-gutter">
     <!-- <ToolBar/> -->
-    <!-- <article class="container"> -->
-      <!-- User info container  -->
-      <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
-        <UserInfo/>
-      </section>
-      <!-- Nav Tab info container  -->
-      <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="navInfo">
-      <md-tabs md-sync-route>
+      <!-- everything container  -->
+    <article class="everything">
         <!-- Itinerary Tab -->
-      <md-tab id="tab-itinerary" md-label="Itinerary" to="/components/Itinerary/Itinerary" exact>
+      <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="tineraryInfo">
         <Itinerary/>
-      </md-tab>
-      <!-- Past Trips Tab -->
-      <md-tab id="tab-PastTrips" md-label="Past Trips" to="/components/PastTrips/PastTrips">
-        <PastTrips/>
-      </md-tab>
-      <!-- Favorties Tab -->
-      <md-tab id="tab-favorites" md-label="Favorites" to="/components/Favorites/favorites">
-        <Favorites/>
-      </md-tab>
-      <!-- Favorties Activities Tab -->
-      <md-tab id="tab-favoriteActivities" md-label="FavoriteActivities" to="/components/FavoriteActivities/FavoriteActivities">
-        <FavoriteActivities/>
-      </md-tab>
-    </md-tabs>
       </section>
-    <!-- </article> -->
+      <!-- User info container  -->
+      <aside class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
+        <UserInfo/>
+      </aside>
+
+
+      <!-- Favorties Tab -->
+    <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favInfo">
+
+        <Favorites/>
+    </section>
+      <!-- Favorties Activities -->
+    <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favActivitiesInfo">
+        <FavoriteActivities/>
+        
+      </section>
+      <!-- Past Trips Tab -->
+    <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pastInfo">
+  
+        <PastTrips/>
+      </section>
+    </article>
   </div>
 </template>
 <script>
