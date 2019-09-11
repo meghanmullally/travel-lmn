@@ -126,12 +126,11 @@
   </div>
 </template>
 <script>
-import ToolBar from '../../components/ToolBar/ToolBar';
 
 export default {
   name: 'PopularDestination',
   components: {
-    ToolBar,
+
     },
   date(){
     return {
