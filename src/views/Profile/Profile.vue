@@ -1,7 +1,7 @@
 <template>
   <div class="Profile md-layout md-gutter">
     <ToolBar/>
-    <article class="container">
+    <!-- <article class="container"> -->
       <!-- User info container  -->
       <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
         <UserInfo/>
@@ -23,7 +23,7 @@
       </md-tab>
     </md-tabs>
       </section>
-    </article>
+    <!-- </article> -->
   </div>
 </template>
 <script>
