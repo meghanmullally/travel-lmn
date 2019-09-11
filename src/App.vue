@@ -10,7 +10,7 @@
 
       <!-- <router-link tag="li" class="col" class-active="active" to="/" exact>MAIN</router-link> -->
       <router-link tag="li" class="col" class-active="active" to="/Home" exact>home</router-link>
-      <router-link tag="li" class="col" class-active="active" to="/Destination" exact>destination</router-link>
+      <router-link tag="li" class="col" class-active="active" to="Destination" exact>destination</router-link>
       <router-link tag="li" class="col" class-active="active" to="/Profile" exact>profile</router-link>
 
       <router-link tag="li" class="col" class-active="active" to="/Activities" exact>activities</router-link>

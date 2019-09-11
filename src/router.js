@@ -13,29 +13,34 @@ export default new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
+    // {
+    //   name: "",
+    //   path: "/",
+    //   component: Home
+    // },
     {
       name: "Home",
-      path: "",
+      path: "/Home",
       component: Home
     },
     {
       name: "Destination",
-      path: "",
+      path: "/Destination",
       component: Destination
     },
     {
       name: "Activities",
-      path: "",
+      path: "/Activities",
       component: Activities
     },
     {
       name: "Profile",
-      path: "",
+      path: "/Profile",
       component: Profile
     },
     {
       name: "Chat",
-      path: "",
+      path: "/Chat",
       component: Chat
     }
 
