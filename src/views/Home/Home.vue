@@ -1,12 +1,12 @@
 <template>
   <div class="Home">
     <!-- <h1>This is the home page</h1> -->
-    <md-toolbar class="md" id="navigation">
-        <md-button class="md-icon-button" @click="toggleMenu" v-if="!menuVisible">
-          <md-icon>menu</md-icon>
-        </md-button>
+    <!-- <md-toolbar class="md" id="navigation"> -->
+        <!-- <md-button class="md-icon-button" @click="toggleMenu" v-if="!menuVisible"> -->
+          <!-- <md-icon>menu</md-icon> -->
+        <!-- </md-button> -->
         <!-- <span class="md-title">LMN</span> -->
-      </md-toolbar>
+      <!-- </md-toolbar> -->
 
       <md-drawer :md-active.sync="menuVisible" md-persistent="full" id="drawer">
         <md-toolbar class="md-transparent" md-elevation="0">

@@ -1,7 +1,7 @@
 <template>
   <div class="Destination">
     <!-- navigation  -->
-    <ToolBar/>
+    <!-- <ToolBar/> -->
     <!-- Destination content -->
     <article class="container">
     <section class="md-layout md-gutter md-alignment-center" id="desContent">
@@ -16,14 +16,14 @@
   </div>
 </template>
 <script>
-import ToolBar from '../../components/ToolBar/ToolBar';
+// import ToolBar from '../../components/ToolBar/ToolBar';
 import PopularDestination from '../../components/PopularDestinations/PopularDestination';
 import PriceContainer from '../../components/PriceContainer/Price';
 
 export default {
   name: 'Destination',
   components: {
-    ToolBar,
+    // ToolBar,
     PopularDestination,
     PriceContainer,
     },
