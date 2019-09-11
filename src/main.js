@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from "./router";
+import router from "./router.js";
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import Vuex from 'vuex';
@@ -61,8 +61,9 @@ export const store = new Vuex.Store({
 })
 
 new Vue({
+  el: "#app",
   router,
   moment,
   store,
   render: h => h(App),
-}).$mount('#app')
+})

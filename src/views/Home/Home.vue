@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="Home">
     <!-- <h1>This is the home page</h1> -->
     <md-toolbar class="md" id="navigation">
         <md-button class="md-icon-button" @click="toggleMenu" v-if="!menuVisible">
@@ -66,7 +66,7 @@ import OriginPicker from '../../components/OriginPicker/OriginPicker';
 import HomeButton from '../../components/HomeButton/HomeButton';
 
   export default {
-    name: 'home',
+    name: 'Home',
     components: {
       ArrivalDatePicker,
       DepartureDatePicker,
