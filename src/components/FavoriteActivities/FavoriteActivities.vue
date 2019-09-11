@@ -1,6 +1,6 @@
 <template>
   <div class="FavoriteActivites">
-    <h2>Activities</h2>
+    <h2>Favorite Activities</h2>
     <md-card class="md-card-example">
       <md-card-area md-inset>
         <md-card-media md-ratio="16:9">
@@ -34,6 +34,17 @@
       </md-card-content>
 
       <md-card-actions>
+          <md-button class="md-icon-button">
+          <md-icon>favorite</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>bookmark</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>share</md-icon>
+        </md-button>
         <md-button class="md-primary">Reserve</md-button>
       </md-card-actions>
     </md-card>
@@ -70,6 +81,17 @@
       </md-card-content>
 
       <md-card-actions>
+          <md-button class="md-icon-button">
+          <md-icon>favorite</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>bookmark</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>share</md-icon>
+        </md-button>
         <md-button class="md-primary">Reserve</md-button>
       </md-card-actions>
     </md-card>
@@ -106,6 +128,17 @@
       </md-card-content>
 
       <md-card-actions>
+          <md-button class="md-icon-button">
+          <md-icon>favorite</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>bookmark</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>share</md-icon>
+        </md-button>
         <md-button class="md-primary">Reserve</md-button>
       </md-card-actions>
     </md-card>
