@@ -1,24 +1,23 @@
 <template>
-  <div class="Profile md-layout md-gutter">
+  <div class="Profile">
     <!-- <ToolBar/> -->
       <!-- everything container  -->
-    <article class="everything">
+    <article class="everything md-layout md-gutter md-alignment-center">
         <!-- Itinerary Tab -->
       <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="tineraryInfo">
         <Itinerary/>
       </section>
+        <!-- Picked Activities  -->
+        <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pickedInfo">
+        <PickedActivities/>
+        </section>
       <!-- User info container  -->
       <aside class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
         <UserInfo/>
       </aside>
 
-  <!-- Picked Activities  -->
-  <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pickedInfo">
-  <PickedActivities/>
-  </section>
       <!-- Favorties Tab -->
     <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favInfo">
-
         <Favorites/>
     </section>
       <!-- Favorties Activities -->
@@ -27,8 +26,7 @@
 
       </section>
       <!-- Past Trips Tab -->
-    <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pastInfo">
-  
+        <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pastInfo">
         <PastTrips/>
       </section>
     </article>
