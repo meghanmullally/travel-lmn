@@ -1,0 +1,43 @@
+.Profile, body {
+  background-color: rgb(234, 246, 250);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-content: baseline;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.userInfo {
+  /* display: flex;
+  align-items: baseline;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%; */
+  display: block;
+  height: auto;
+  margin: 25px;
+  padding: 0 auto;
+
+}
+
+.navigationInfo {
+  /* background-color: rgb(234, 246, 250);
+  display: flex;
+  align-items: baseline;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 25px;
+  padding: 0 auto;
+}

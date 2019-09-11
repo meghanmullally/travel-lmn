@@ -1,22 +1,23 @@
 <template>
-  <div class="Profile">
-    <article class="container">
-      <section class="userInfo">
-    <!-- <UserInfo/> -->
-
+  <div class="Profile md-layout md-gutter ">
+    <article class="container md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
+      <!-- User info container  -->
+      <section class="userInfo md-layout-item">
+        <UserInfo/>
       </section>
-      <section class="navigationInfo">
+      <!-- Nav Tab info container  -->
+      <section class="navigationInfo md-layout-item">
       <md-tabs md-sync-route>
       <md-tab id="tab-itinerary" md-label="Itinerary" to="/components/Itinerary/Itinerary" exact>
-        Itinerary Tab
+        <Itinerary/>
       </md-tab>
       <md-tab id="tab-PastTrips" md-label="Past Trips" to="/components/PastTrips/PastTrips">
         Pages tab
-        <p>Unde provident nemo reiciendis officia, possimus repellendus. Facere dignissimos dicta quis rem. Aliquam aspernatur dolor atque nisi id deserunt laudantium quam repellat.</p>
+        <PastTrips/>
       </md-tab>
       <md-tab id="tab-favorites" md-label="Favorites" to="/components/Favorites/favorites">
         Favorites tab
-        <p>Maiores, dolorum. Beatae, optio tempore fuga odit aperiam velit, consequuntur magni inventore sapiente alias sequi odio qui harum dolorem sunt quasi corporis.</p>
+        <Favorties/>
       </md-tab>
     </md-tabs>
       </section>
@@ -24,10 +25,19 @@
   </div>
 </template>
 <script>
+import Itinerary from '../../components/ItineraryContainer/Itinerary';
+import UserInfo from '../../components/UserInfo/User';
+import PastTrips from '../../components/PastTrips/PastTrips';
+import Favorites from '../../components/Favorites/Favorites.vue';
+
+
 export default {
   name: 'Profile',
   components: {
-    // UserInfo
+    Itinerary,
+    UserInfo,
+    PastTrips,
+    Favorites
   },
   date(){
     return {
@@ -37,5 +47,5 @@ export default {
 }
 </script>
 <style>
-/* @import './assets/styles/style.css'; */
+@import './assets/styles/style.css';
 </style>
