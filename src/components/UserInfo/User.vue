@@ -19,7 +19,7 @@
 </template>
 <script>
 export default {
-  name: 'user',
+  name: 'UserInfo',
   date(){
     return {
       msg: "user"

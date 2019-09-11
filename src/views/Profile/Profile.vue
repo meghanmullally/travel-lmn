@@ -1,38 +1,34 @@
 <template>
   <div class="Profile">
     <article class="container">
-    <h2>This is the profile page</h2>
-    <!-- Itinerary section -->
-      <section class="itinerary">
-        <h3>Itinerary Side</h3>
+      <section class="userInfo">
+    <!-- <UserInfo/> -->
+
       </section>
-    <!-- User Profile Info -->
-      <section class="user">
-      <h3>User Information</h3>
-      <p>Bio</p>
-      <p>maybe an image?</p>
-      <p>Name:</p>
-      <p>Age:</p>
-      <p>Email:</p>
-      </section>
-      <!-- Past Trips Information  -->
-      <section class="pastTrips">
-        <h3>Past Trips</h3>
-      </section>
-      <!-- Favorite destinations!  -->
-      <section class="favorite">
-      <h3>fav destinations?</h3>
+      <section class="navigationInfo">
+      <md-tabs md-sync-route>
+      <md-tab id="tab-itinerary" md-label="Itinerary" to="/components/Itinerary/Itinerary" exact>
+        Itinerary Tab
+      </md-tab>
+      <md-tab id="tab-PastTrips" md-label="Past Trips" to="/components/PastTrips/PastTrips">
+        Pages tab
+        <p>Unde provident nemo reiciendis officia, possimus repellendus. Facere dignissimos dicta quis rem. Aliquam aspernatur dolor atque nisi id deserunt laudantium quam repellat.</p>
+      </md-tab>
+      <md-tab id="tab-favorites" md-label="Favorites" to="/components/Favorites/favorites">
+        Favorites tab
+        <p>Maiores, dolorum. Beatae, optio tempore fuga odit aperiam velit, consequuntur magni inventore sapiente alias sequi odio qui harum dolorem sunt quasi corporis.</p>
+      </md-tab>
+    </md-tabs>
       </section>
     </article>
-    
-    
-    
-    
   </div>
 </template>
 <script>
 export default {
   name: 'Profile',
+  components: {
+    // UserInfo
+  },
   date(){
     return {
       msg: "Profile page"
