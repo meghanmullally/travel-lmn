@@ -1,0 +1,7 @@
+.md-card {
+  width: 350px;
+  margin: 8px;
+  /* padding: 0 auto; */
+  display: inline-block;
+  vertical-align: top;
+}
