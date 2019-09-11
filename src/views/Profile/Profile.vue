@@ -1,6 +1,6 @@
 <template>
   <div class="Profile md-layout md-gutter">
-    <ToolBar/>
+    <!-- <ToolBar/> -->
     <!-- <article class="container"> -->
       <!-- User info container  -->
       <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
@@ -31,7 +31,7 @@
   </div>
 </template>
 <script>
-import ToolBar from '../../components/ToolBar/ToolBar';
+// import ToolBar from '../../components/ToolBar/ToolBar';
   import Itinerary from '../../components/ItineraryContainer/Itinerary';
   import UserInfo from '../../components/UserInfo/User';
   import PastTrips from '../../components/PastTrips/PastTrips';
@@ -42,7 +42,7 @@ import ToolBar from '../../components/ToolBar/ToolBar';
 export default {
   name: 'Profile',
   components: {
-    ToolBar,
+    // ToolBar,
     Itinerary,
     UserInfo,
     PastTrips,
