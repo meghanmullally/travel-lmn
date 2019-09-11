@@ -21,6 +21,10 @@
       <md-tab id="tab-favorites" md-label="Favorites" to="/components/Favorites/favorites">
         <Favorites/>
       </md-tab>
+      <!-- Favorties Activities Tab -->
+      <md-tab id="tab-favoriteActivities" md-label="FavoriteActivities" to="/components/FavoriteActivities/FavoriteActivities">
+        <FavoriteActivities/>
+      </md-tab>
     </md-tabs>
       </section>
     <!-- </article> -->
@@ -32,6 +36,7 @@ import ToolBar from '../../components/ToolBar/ToolBar';
   import UserInfo from '../../components/UserInfo/User';
   import PastTrips from '../../components/PastTrips/PastTrips';
   import Favorites from '../../components/Favorites/Favorites';
+  import FavoriteActivities from '../../components/FavoriteActivities/FavoriteActivities';
 
 
 export default {
@@ -41,7 +46,8 @@ export default {
     Itinerary,
     UserInfo,
     PastTrips,
-    Favorites
+    Favorites,
+    FavoriteActivities,
   },
   date(){
     return {

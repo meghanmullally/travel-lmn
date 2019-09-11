@@ -64,7 +64,7 @@ methods: {
 }
 
 #drawer, #nav-list {
-  background-color: transparent;
+  background-color: white;
   /* margin: 10px; */
   padding: 0 auto;
 }

@@ -4,7 +4,22 @@
 <!-- <router-link></router-link> -->
 <!-- <Destination/> -->
 <!-- <Home/> -->
-<Profile/>
+<!-- <Profile/> -->
+
+<nav class="navbar navbar-expand-lg fixed-top row">
+
+      <!-- <router-link tag="li" class="col" class-active="active" to="/" exact>MAIN</router-link> -->
+      <router-link tag="li" class="col" class-active="active" to="/Home" exact>home</router-link>
+      <router-link tag="li" class="col" class-active="active" to="Destination" exact>destination</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/Profile" exact>profile</router-link>
+
+      <router-link tag="li" class="col" class-active="active" to="/Activities" exact>activities</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/Chat" exact>chat</router-link>
+      <!-- <router-link tag="li" class="col" class-active="active" to="/contact" exact>contact</router-link> -->
+    </nav>
+
+    <router-view></router-view>
+
   </div>
 </template>
 
@@ -12,25 +27,25 @@
 // import NavBar from './components/Navbar/Navbar'
 // import Destination from './views/Destination/Destination'
 // import Home from './views/Home/Home'
-import Profile from './views/Profile/Profile'
+// import Profile from './views/Profile/Profile'
 
 
 export default {
   name: 'app',
-  components: {
+  // components: {
     // NavBar
   // Destination
   // Home
-  Profile
-  },
+  // Profile
+  // },
   data() {
       return {
         msg: 'Welcome to our LMN Travel App',
-        // home: {},
-        // destination: {},
-        // activities: {},
-        // profile: {},
-        // chat: {}
+        Home: {},
+        Destination: {},
+        Activities: {},
+        Profile: {},
+        Chat: {}
 
       }
     }
