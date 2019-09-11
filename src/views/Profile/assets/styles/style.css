@@ -8,20 +8,19 @@
   padding: 0 auto;
 }
 
-.userInfo {
-  float: right;
-  width: 30%;
+#userInfo {
+  float: left;
+  width: 20%;
   height: auto;
   margin: 25px;
   padding: 0 auto;
 
 }
 
-.navigationInfo {
-  float: left;
-  width: 63%;
-  width: 100%;
+#navInfo {
+  float: right;
+  width: 83%;
   height: auto;
-  margin: 25px;
-  padding: 0 auto;
+  /* margin: 25px;
+  padding: 0 auto; */
 }
