@@ -1,11 +1,11 @@
 <template>
   <div class="FavoriteActivites">
-    
+    <h2>Activities</h2>
   </div>
 </template>
 <script>
 export default {
-  name: 'Favorites',
+  name: 'FavoriteActivities',
   date(){
     return {
       msg: "favorite"
