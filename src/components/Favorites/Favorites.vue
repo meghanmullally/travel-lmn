@@ -12,6 +12,10 @@
       </md-card-media>
 
       <md-card-actions>
+        <md-card-header>
+            <span class="md-title">Hawaii</span>
+            <span class="md-subhead"></span>
+          </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
         </md-button>
@@ -34,6 +38,10 @@
       </md-card-media>
 
       <md-card-actions>
+        <md-card-header>
+            <span class="md-title">Chicago</span>
+            <span class="md-subhead"></span>
+          </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
         </md-button>
@@ -54,8 +62,11 @@
         <img src="./assets/images/tim-foster-o4mP43oPGHk-unsplash.jpg" alt="San Fran Golden Gate Bridge">
         </md-ripple>
       </md-card-media>
-
       <md-card-actions>
+        <md-card-header>
+            <span class="md-title">San Francisco</span>
+            <span class="md-subhead"></span>
+          </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
         </md-button>
@@ -78,6 +89,10 @@
       </md-card-media>
 
       <md-card-actions>
+        <md-card-header>
+            <span class="md-title">Seattle</span>
+            <!-- <span class="md-subhead"> Washington</span> -->
+          </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
         </md-button>
