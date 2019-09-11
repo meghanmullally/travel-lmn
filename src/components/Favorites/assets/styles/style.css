@@ -1,6 +1,10 @@
-/* .Favorites {
+.favorite {
+  display: flex;
+  flex-direction: row;
   overflow: auto;
-} */
+  width: 100%;
+  height: auto;
+}
 
 .md-card {
   width: 350px;

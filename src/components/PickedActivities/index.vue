@@ -38,4 +38,9 @@ export default {
 </script>
 <style>
 
+.collection {
+  overflow:auto;
+  /* width: 200px; */
+}
+
 </style>

@@ -18,6 +18,7 @@
 
       <!-- Favorties Tab -->
     <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favInfo">
+            <h3>Favorite Destinations</h3> 
         <Favorites/>
     </section>
       <!-- Favorties Activities -->
@@ -27,6 +28,7 @@
       </section>
       <!-- Past Trips Tab -->
         <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pastInfo">
+          <h3>Past Trips</h3>
         <PastTrips/>
       </section>
     </article>
