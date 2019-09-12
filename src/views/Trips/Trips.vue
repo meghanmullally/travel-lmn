@@ -17,7 +17,6 @@ import PastTrips from '../../components/PastTrips/PastTrips';
 import Favorites from '../../components/Favorites/Favorites';
 import Upcoming from '../../components/UpcomingTrips/Upcoming';
 
-
 export default {
   name: "Trip",
   components: {
