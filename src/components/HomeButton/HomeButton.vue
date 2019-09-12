@@ -13,11 +13,20 @@ export default {
   data() {
     return {
     msg: 'HomeButton',
-    flightInfo:{
-      origin: this.$store.getters.origin,
-      destination: this.$store.getters.destination
-    }}
+      flightInfo:{
+        origin: this.$store.getters.origin,
+        destination: this.$store.getters.destination
+      }    
+    }
   },
+
+  // updated(){
+  //   if(this.$store.getters.toggle === true){
+  //     API.getItinerary(this.flightInfo).then(res => {
+  //       console.log(res);
+  //     }).catch(err => console.log(err))
+  //   }
+  // },
 
   // beforeUpdate(){
   //       API.getItinerary(this.flightInfo).then(res => {
@@ -31,10 +40,11 @@ export default {
   // }
   // methods: {
   //   submit: function(){
-  //     console.log("click button working?", this.flightInfo);
-  //     API.getItinerary(this.flightInfo).then(res => {
-  //       console.log(res);
-  //     }).catch(err => console.log(err));
+  //     this.$emit("submit");
+  //     this.$store.commit({
+  //       type: "submitToggle",
+  //       newToggle: true
+  //     });
   // }}
 };
 </script>

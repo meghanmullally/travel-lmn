@@ -77,13 +77,13 @@ export const store = new Vuex.Store({
     },
     changeFlightInfo(state, payload){
       state.flightInfo = payload.newFlightInfo  
-    }
+    },
     
   },
   getters: 
   {
     origin: state => state.originCity,
-    destination: state => state.destinationCity
+    destination: state => state.destinationCity,
     // flightInfo: state => state.flightInfo,
   }
 })
