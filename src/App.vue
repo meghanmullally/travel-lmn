@@ -9,7 +9,7 @@
 <nav class="navbar navbar-expand-lg fixed-top row" id="appNav">
       <!-- <router-link tag="li" class="col" class-active="active" to="/" exact>MAIN</router-link> -->
       <router-link tag="li" class="col" class-active="active" to="/Home" exact> Home</router-link>
-      <router-link tag="li" class="col" class-active="active" to="Destination" exact> <md-icon class="icon">card_travel</md-icon> Destination</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/Destination" exact> <md-icon class="icon">card_travel</md-icon> Destination</router-link>
       <router-link tag="li" class="col" class-active="active" to="/Profile" exact>        <md-icon class="icon">supervisor_account</md-icon> Profile</router-link>
 
       <router-link tag="li" class="col" class-active="active" to="/Activities" exact> <md-icon class="icon">explore</md-icon>Activities</router-link>
