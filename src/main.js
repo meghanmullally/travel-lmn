@@ -65,6 +65,7 @@ export const store = new Vuex.Store({
     destinationCity: '',
     departureDate: '',
     returnDate: '',
+    destinationName: '',
     // flightInfo: {
     //   originCode: '',
     //   destinationCode: '',
@@ -87,12 +88,16 @@ export const store = new Vuex.Store({
     changeFlightInfo(state, payload){
       state.flightInfo = payload.newFlightInfo  
     },
+    changeDestinationName(state, payload) {
+      state.destinationName = payload.newDestinationName;
+    }
     
   },
   getters: 
   {
     origin: state => state.originCity,
     destination: state => state.destinationCity,
+    destinationName: state => state.destinationName,
     // flightInfo: state => state.flightInfo,
   }
 })

@@ -44,6 +44,20 @@ export default {
     const flightStuff =[];
     flightStuff.push(this.flightInfo);
     API.getItinerary(flightStuff).then(res => {
+      const flights = [];
+      const cities = res.data.Places;
+      flights.push(res.data);
+      const cityName = cities.filter(city => {
+        if(city.Type === "City" && city.Code === this.$store.getters.destination){
+          console.log(city.Name);
+          this.$emit("destinationName");
+          this.$store.commit({
+            type: "changeDestinationName",
+            newDestinationName: city.Name
+          });          
+          return;
+        }
+      })
       console.log(res);
     }).catch(err => console.log(err))
   },

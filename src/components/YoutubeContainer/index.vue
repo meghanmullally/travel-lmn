@@ -19,7 +19,7 @@ export default {
       vvideoId3: "",
       videoId4: "",
       info: "Suggested Videos to Assist Your Travels",
-      queryCountry: this.$store.getters.city //this.city
+      queryCountry: this.$store.getters.destinationName //this.city
     };
   },
   mounted() {
@@ -27,9 +27,10 @@ export default {
     axios
       .get("https://www.googleapis.com/youtube/v3/search", {
         params: {
-          part: "snippet, id",
+          part: "id,snippet",
           q: "travel guide " + this.queryCountry,
-          key:"VUE_APP_YOUTUBE_ACCESS_KEY"
+          key: process.env.VUE_APP_YOUTUBE_ACCESS_KEY,
+          maxResults: 50
         }
       })
       .then(response => {
