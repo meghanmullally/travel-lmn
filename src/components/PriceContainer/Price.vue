@@ -2,14 +2,14 @@
   <div class="Price">
     <md-table class="priceTable" v-model="flights" md-card @md-selected="onSelect" md-sort="airline" md-sort-order="asc">
       <md-table-toolbar>
-        <h1 class="md-title">Flight Options</h1>
+        <h1 class="md-title">Departure Options</h1>
       </md-table-toolbar>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }" :class="getClass(item)" md-selectable="single">
-        <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.id }}</md-table-cell>
+        <!-- <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.id }}</md-table-cell> -->
         <md-table-cell md-label="Airline" md-sort-by="airline">{{ item.airline }}</md-table-cell>
         <md-table-cell md-label="Flight" md-sort-by="flight">{{ item.flight }}</md-table-cell>
-        <md-table-cell md-label="Time" md-sort-by="time">{{ item.time }}</md-table-cell>
+        <md-table-cell md-label="Duration" md-sort-by="duration">{{ item.time }}</md-table-cell>
         <md-table-cell md-label="Departure" md-sort-by="departure">{{ item.departure }}</md-table-cell>
         <md-table-cell md-label="Arrival" md-sort-by="arrival">{{ item.arrival }}</md-table-cell>
         <md-table-cell md-label="Price" md-sort-by="price">{{ item.price }}</md-table-cell>

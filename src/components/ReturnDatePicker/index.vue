@@ -4,7 +4,7 @@
     <section class="datePick-section">
 
       <md-datepicker v-model="selectedDate" class="arrival">
-            <label class="date">Select Arrival date</label>
+            <label class="date">Select Return date</label>
           </md-datepicker> 
 
     <!-- <md-datepicker v-model="selectedDate" class="arrival">
