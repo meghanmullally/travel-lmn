@@ -7,14 +7,14 @@
 <!-- <Profile/> -->
 
 <nav class="navbar navbar-expand-lg fixed-top row" id="appNav">
-
       <!-- <router-link tag="li" class="col" class-active="active" to="/" exact>MAIN</router-link> -->
       <router-link tag="li" class="col" class-active="active" to="/Home" exact> Home</router-link>
       <router-link tag="li" class="col" class-active="active" to="Destination" exact> <md-icon class="icon">card_travel</md-icon> Destination</router-link>
       <router-link tag="li" class="col" class-active="active" to="/Profile" exact>        <md-icon class="icon">supervisor_account</md-icon> Profile</router-link>
 
       <router-link tag="li" class="col" class-active="active" to="/Activities" exact> <md-icon class="icon">explore</md-icon>Activities</router-link>
-      <router-link tag="li" class="col" class-active="active" to="/Chat" exact>            <md-icon class="icon">chat</md-icon> Chat</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/Trips" exact><md-icon class="icon">flight</md-icon>Trips</router-link>
+      <!-- <router-link tag="li" class="col" class-active="active" to="/Chat" exact>            <md-icon class="icon">chat</md-icon> Chat</router-link> -->
       <!-- <router-link tag="li" class="col" class-active="active" to="/contact" exact>contact</router-link> -->
     </nav>
 
@@ -59,7 +59,8 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    /* margin: 0; */
+    /* padding: 0; */
   }
 
 
@@ -83,7 +84,7 @@ export default {
   }
 
   #appNav {
-    background-color: transparent;
+    background-color: rgba(250, 250, 132, 0.822);
     color: black;
   }
 

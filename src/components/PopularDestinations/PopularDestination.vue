@@ -126,19 +126,55 @@
   </div>
 </template>
 <script>
-import ToolBar from '../../components/ToolBar/ToolBar';
+import axios from 'axios';
 
 export default {
   name: 'PopularDestination',
-  components: {
-    ToolBar,
-    },
+  // components: {
+
+  //   },
   date(){
     return {
-      msg: "Popular Destination"
+      msg: "Popular Destination",
+      // photos: [],
+      // photo_url: null
   }
+//   },
   }
 }
+//   createtd() {
+//     this.getPhoto()
+//   },
+//   computed: {
+//     backgroundStyle() {
+//       let style = {}
+//         if(this.photo_url) {
+//           style.background = `no-repeat center/100% 100% url(${this.photo_url})`
+//         } else {
+
+//         }
+//         return <i class="fas fa-staylinked    "></i>
+//     }
+//   },
+// methods: {
+//   getPhoto() {
+    // grabbing the api 
+    // let unsplash_API = VUE_APP_UNSPLASH_ACCESS_KEY;
+
+    //   this.$axios.get(`https://api.unsplash.com/photos/:id?client_id=${unsplash_API}`)
+    //   .then(response => {
+//         // JSON responses are automatically parsed.
+//         this.photos = response.data.results
+//       })
+//       .catch(event => {
+//         console.log(event)
+//       })
+
+
+//   }
+// }
+// }
+
 </script>
 <style>
     @import './assets/styles/style.css';

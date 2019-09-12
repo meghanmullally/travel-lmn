@@ -2,7 +2,7 @@
   <div class="Favorites">
       <!-- Favorite destinations!  -->
       <section class="favorite">
-      <h3>Favorite Destinations</h3>
+      <!-- <h3>Favorite Destinations</h3> -->
       <!-- favorite 1 -->
       <md-card>
       <md-card-media>
@@ -18,14 +18,6 @@
           </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
         </md-button>
       </md-card-actions>
     </md-card>
@@ -45,14 +37,6 @@
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
         </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
-        </md-button>
       </md-card-actions>
     </md-card>
     <!-- Favorite 3 -->
@@ -69,14 +53,6 @@
           </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
         </md-button>
       </md-card-actions>
     </md-card>
@@ -95,14 +71,6 @@
           </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
         </md-button>
       </md-card-actions>
     </md-card>

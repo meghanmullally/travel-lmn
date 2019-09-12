@@ -3,9 +3,8 @@
 
 <section class="destinationPick">
 <md-field>
-      <label class="destination"><i class="material-icons">
-flight
-</i> EX: LAX </label>
+      <label class="destination">
+        EX: LAX </label>
       <md-input v-model="initial"  type="text" placeholder="Destination, airport">
       </md-input>
     </md-field>
