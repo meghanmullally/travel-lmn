@@ -29,7 +29,7 @@ export default {
         params: {
           part: "snippet, id",
           q: "travel guide " + this.queryCountry,
-          key:VUE_APP_YOUTUBE_ACCESS_KEY
+          key:"VUE_APP_YOUTUBE_ACCESS_KEY"
         }
       })
       .then(response => {
