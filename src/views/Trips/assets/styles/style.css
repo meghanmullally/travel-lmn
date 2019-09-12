@@ -1,0 +1,13 @@
+.trips-title 
+{
+  text-align: left;
+  margin-left: 45px;
+  /* margin-bottom: 45px; */
+}
+
+.history-title, .fav-title, .upcoming-title {
+  text-align: left;
+  margin-left: 45px;
+  /* margin-top: 25px; */
+}
+

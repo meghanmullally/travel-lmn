@@ -9,7 +9,7 @@
       <PopularDestination/>
     </section>
       <section class="md-layout md-gutter md-alignment-space-around-center" id="desPrice">
-        <h3 class="flightHeader">Flight Options</h3>
+        <!-- <h3 class="flightHeader">Flight Options</h3> -->
       <PriceContainer/>
     </section>
     </article>

@@ -1,5 +1,6 @@
 <template>
   <div class="itinerary">
+    <h4>Travel Details</h4>
       <md-card md-with-hover class="ticket">
         <md-ripple>
       <md-card-header class="ticket-header">
@@ -20,18 +21,6 @@
             <div class="item">
               <h2 class="name">Flight</h2>
               <span class="value">815</span>
-            </div>
-            </div>
-            <div class="col">
-            <div class="item">
-              <h2 class="name">Gate</h2>
-              <span class="value">8C</span>
-            </div>
-            </div>
-            <div class="col">
-            <div class="item">
-              <h2 class="name">Seat</h2>
-              <span class="value">24E</span>
             </div>
             </div>
             </div>

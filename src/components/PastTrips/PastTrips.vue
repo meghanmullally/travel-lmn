@@ -1,9 +1,8 @@
 <template>
-  <div class="pastTrips">
-    <!-- <article class="container"> -->
+  <div class="Trips">
       <!-- Past Trips Information  -->
       <section class="pastTrips">
-        <h3>Past Trips</h3>
+        <!-- <h3>Past Trips</h3> -->
         <!-- Past Trips 1 -->
       <md-card>
       <md-card-media>
@@ -11,6 +10,7 @@
           <img src="./assets/images/aditya-chinchure-z0jsRtvo2iQ-unsplash.jpg" alt="Vancouver BC">
         </md-ripple>
       </md-card-media>
+
       <md-card-actions>
         <md-card-header>
             <span class="md-title">Vancouver BC</span>
@@ -18,14 +18,6 @@
           </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
         </md-button>
       </md-card-actions>
     </md-card>
@@ -45,14 +37,6 @@
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
         </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
-        </md-button>
       </md-card-actions>
     </md-card>
     <!-- Past Trips 3 -->
@@ -70,13 +54,6 @@
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
         </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
         </md-button>
       </md-card-actions>
     </md-card>
@@ -96,20 +73,11 @@
           <md-icon>favorite</md-icon>
         </md-button>
 
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
-        </md-button>
       </md-card-actions>
     </md-card>
   
       </section>
   
-    <!-- </article> -->
-
   </div>
 </template>
 <script>

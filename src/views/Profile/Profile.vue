@@ -1,53 +1,42 @@
 <template>
-  <div class="Profile md-layout md-gutter">
+  <div class="Profile">
     <!-- <ToolBar/> -->
-    <!-- <article class="container"> -->
+      <!-- everything container  -->
+    <article class="everything md-layout md-gutter md-alignment-center">
       <!-- User info container  -->
-      <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
+      <aside class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
         <UserInfo/>
-      </section>
-      <!-- Nav Tab info container  -->
-      <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="navInfo">
-      <md-tabs md-sync-route>
+      </aside>
         <!-- Itinerary Tab -->
-      <md-tab id="tab-itinerary" md-label="Itinerary" to="/components/Itinerary/Itinerary" exact>
+      <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="tineraryInfo">
         <Itinerary/>
-      </md-tab>
-      <!-- Past Trips Tab -->
-      <md-tab id="tab-PastTrips" md-label="Past Trips" to="/components/PastTrips/PastTrips">
-        <PastTrips/>
-      </md-tab>
-      <!-- Favorties Tab -->
-      <md-tab id="tab-favorites" md-label="Favorites" to="/components/Favorites/favorites">
-        <Favorites/>
-      </md-tab>
-      <!-- Favorties Activities Tab -->
-      <md-tab id="tab-favoriteActivities" md-label="FavoriteActivities" to="/components/FavoriteActivities/FavoriteActivities">
-        <FavoriteActivities/>
-      </md-tab>
-    </md-tabs>
       </section>
-    <!-- </article> -->
+        <!-- Picked Activities  -->
+        <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pickedInfo">
+        <PickedActivities/>
+        </section>
+      <!-- Favorties Activities -->
+    <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favActivitiesInfo">
+        <FavoriteActivities/>
+
+      </section>
+    </article>
   </div>
 </template>
 <script>
-// import ToolBar from '../../components/ToolBar/ToolBar';
   import Itinerary from '../../components/ItineraryContainer/Itinerary';
   import UserInfo from '../../components/UserInfo/User';
-  import PastTrips from '../../components/PastTrips/PastTrips';
-  import Favorites from '../../components/Favorites/Favorites';
   import FavoriteActivities from '../../components/FavoriteActivities/FavoriteActivities';
+  import PickedActivities from '../../components/PickedActivities';
 
 
 export default {
   name: 'Profile',
   components: {
-    // ToolBar,
     Itinerary,
     UserInfo,
-    PastTrips,
-    Favorites,
     FavoriteActivities,
+    PickedActivities
   },
   date(){
     return {

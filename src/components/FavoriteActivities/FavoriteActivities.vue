@@ -1,7 +1,7 @@
 <template>
   <div class="FavoriteActivites">
     <h2>Favorite Activities</h2>
-    <md-card class="md-card-example">
+    <md-card class="favAct">
       <md-card-area md-inset>
         <md-card-media md-ratio="16:9">
           <img src="./assets/images/maria-fernanda-gonzalez-kWVXCmyB9so-unsplash.jpg" alt="Coffee Beans in a mug">
