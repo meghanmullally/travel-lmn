@@ -15,9 +15,9 @@
         <md-table-cell md-label="Price" md-sort-by="price">{{ item.price }}</md-table-cell>
       </md-table-row>
     </md-table>
-
+<!-- 
     <p>Selected:</p>
-    {{ selected }}
+    {{ selected }} -->
   </div>
 </template>
 

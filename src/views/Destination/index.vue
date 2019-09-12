@@ -8,7 +8,7 @@
       <h3 class="popHeader">Popular Destinations</h3>
       <PopularDestination/>
     </section>
-      <section class="md-layout md-gutter md-alignment-space-around-center" id="desPrice">
+      <section class="md-layout md-gutter md-alignment-space-around-center" id="desFlightOptions">
         <!-- <h3 class="flightHeader">Flight Options</h3> -->
       <PriceContainer/>
     <ReturnFlight/>

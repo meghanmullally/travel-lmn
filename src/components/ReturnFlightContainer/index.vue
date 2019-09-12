@@ -16,8 +16,8 @@
       </md-table-row>
     </md-table>
 
-    <p>Selected:</p>
-    {{ selected }}
+    <!-- <p>Selected:</p>
+    {{ selected }} -->
   </div>
 </template>
 
