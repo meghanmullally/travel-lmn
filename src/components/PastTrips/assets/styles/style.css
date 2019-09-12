@@ -1,0 +1,18 @@
+.pastTrips {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  flex-wrap: row wrap;
+  width: 100%;
+  height: auto;
+}
+
+.md-card {
+  width: 248px;
+  margin: 8px;
+  /* padding: 0 auto; */
+  display: inline-block;
+  vertical-align: top;
+}

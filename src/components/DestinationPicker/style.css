@@ -1,0 +1,18 @@
+.destinationPick {
+  /* background-color: rgba(245, 245, 245, 0.822); */
+  padding: 25px;
+  margin: 10px;
+}
+
+
+label.destination {
+  color: black;
+}
+
+.md-input {
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}

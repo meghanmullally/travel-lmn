@@ -1,0 +1,18 @@
+.originPick {
+  /* background-color: rgba(245, 245, 245, 0.822); */
+  padding: 25px;
+  margin: 10px;
+}
+
+
+label.origin {
+  color: black;
+}
+
+.md-input {
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}

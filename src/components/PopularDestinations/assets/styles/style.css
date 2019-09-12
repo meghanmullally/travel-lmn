@@ -1,0 +1,13 @@
+.popHeader {
+  color: black;
+  font-weight: bold;
+}
+
+#desItems {
+  background-color: transparent;
+}
+
+.desCard {
+  width: 400px;
+  height: auto;
+}
