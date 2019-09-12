@@ -4,7 +4,8 @@ import Home from './views/Home/Home';
 import Destination from './views/Destination/Destination';
 import Activities from './views/Activities/Activities';
 import Profile from './views/Profile/Profile';
-import Chat from './views/Chat/Chat';
+import Trips from './views/Trips/Trips';
+// import Chat from './views/Chat/Chat';
 
 
 Vue.use(Router);
@@ -39,10 +40,15 @@ export default new Router({
       component: Profile
     },
     {
-      name: "Chat",
-      path: "/Chat",
-      component: Chat
+      name: "Trips",
+      path: "/Trips",
+      component: Trips
     }
+    // {
+    //   name: "Chat",
+    //   path: "/Chat",
+    //   component: Chat
+    // }
 
   ]
 });

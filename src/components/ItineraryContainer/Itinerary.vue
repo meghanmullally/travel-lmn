@@ -1,6 +1,6 @@
 <template>
   <div class="itinerary">
-    <h4>Flight Information</h4>
+    <h4>Travel Details</h4>
       <md-card md-with-hover class="ticket">
         <md-ripple>
       <md-card-header class="ticket-header">
