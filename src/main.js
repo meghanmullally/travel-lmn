@@ -11,6 +11,7 @@ import 'vue-material/dist/theme/default.css'
 // import VueCarousel from 'vue-carousel';
 // Vue.use(VueCarousel);
 import Unsplash from 'unsplash-js';
+import VueYouTubeEmbed from 'vue-youtube-embed';
 
 
 
@@ -35,7 +36,7 @@ Vue.use(MdSteppers);
 
 Vue.use(VueAxios, axios);
 Vue.use(Vuex);
-
+Vue.use(VueYouTubeEmbed);
 
 const unsplash = new Unsplash({
   applicationId: "VUE_APP_UNSPLASH_ACCESS_KEY",
