@@ -7,13 +7,13 @@
       <md-card>
       <md-card-media>
         <md-ripple>
-          <img src="./assets/images/aditya-chinchure-z0jsRtvo2iQ-unsplash.jpg" alt="Vancouver BC">
+          <img src="./assets/images/gert-boers-qQC8tyG_JVA-unsplash.jpg" alt="Grand Canyon">
         </md-ripple>
       </md-card-media>
 
       <md-card-actions>
         <md-card-header>
-            <span class="md-title">Vancouver BC</span>
+            <span class="md-title">Grand Canyon</span>
             <span class="md-subhead"></span>
           </md-card-header>
         <md-button class="md-icon-button">
