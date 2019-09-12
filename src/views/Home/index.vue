@@ -12,7 +12,7 @@
 <OriginPicker/> 
 <DestinationPicker/>
 <DepartureDatePicker/>
-<ArrivalDatePicker/>
+<ReturnDatePicker/>
 <HomeButton/>
 </section>
 
@@ -21,16 +21,16 @@
 </template>
 <script>
 import moment from 'moment';
-import ArrivalDatePicker from '../../components/ArrivalDatePicker/ArrivalDatePicker';
-import DepartureDatePicker from '../../components/DepartureDatePicker/DepartureDatePicker';
-import DestinationPicker from '../../components/DestinationPicker/DestinationPicker';
-import OriginPicker from '../../components/OriginPicker/OriginPicker';
-import HomeButton from '../../components/HomeButton/HomeButton';
+import ReturnDatePicker from '../../components/ReturnDatePicker';
+import DepartureDatePicker from '../../components/DepartureDatePicker';
+import DestinationPicker from '../../components/DestinationPicker';
+import OriginPicker from '../../components/OriginPicker';
+import HomeButton from '../../components/HomeButton';
 
   export default {
     name: 'Home',
     components: {
-      ArrivalDatePicker,
+      ReturnDatePicker,
       DepartureDatePicker,
       DestinationPicker,
       OriginPicker,
