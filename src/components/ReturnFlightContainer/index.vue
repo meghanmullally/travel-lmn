@@ -1,8 +1,8 @@
 <template>
-  <div class="Price">
-    <md-table class="priceTable" v-model="flights" md-card @md-selected="onSelect" md-sort="airline" md-sort-order="asc">
+  <div class="ReturnFlight">
+    <md-table class="ReturnFlightTable" v-model="flights" md-card @md-selected="onSelect" md-sort="airline" md-sort-order="asc">
       <md-table-toolbar>
-        <h1 class="md-title">Departure Options</h1>
+        <h1 class="md-title">Return Options</h1>
       </md-table-toolbar>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }" :class="getClass(item)" md-selectable="single">
@@ -15,8 +15,8 @@
         <md-table-cell md-label="Price" md-sort-by="price">{{ item.price }}</md-table-cell>
       </md-table-row>
     </md-table>
-<!-- 
-    <p>Selected:</p>
+
+    <!-- <p>Selected:</p>
     {{ selected }} -->
   </div>
 </template>
@@ -101,7 +101,7 @@
   padding: 0;
   } */
 
-  .priceTable {
+  .ReturnFlightTable {
     margin-top: 16px;
     width: 100%;
     height: auto;

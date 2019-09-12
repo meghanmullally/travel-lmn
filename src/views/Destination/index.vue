@@ -8,25 +8,29 @@
       <h3 class="popHeader">Popular Destinations</h3>
       <PopularDestination/>
     </section>
-      <section class="md-layout md-gutter md-alignment-space-around-center" id="desPrice">
+      <section class="md-layout md-gutter md-alignment-space-around-center" id="desFlightOptions">
         <!-- <h3 class="flightHeader">Flight Options</h3> -->
       <PriceContainer/>
+    <ReturnFlight/>
     </section>
+  
+    
     </article>
   </div>
 </template>
 <script>
-// import ToolBar from '../../components/ToolBar/ToolBar';
 import PopularDestination from '../../components/PopularDestinations/PopularDestination';
 import PriceContainer from '../../components/PriceContainer/Price';
 import API from '../../utils/API';
+import ReturnFlight from '../../components/ReturnFlightContainer'
+
 
 export default {
   name: 'Destination',
   components: {
-    // ToolBar,
     PopularDestination,
     PriceContainer,
+    ReturnFlight
     },
   data(){
     return {
