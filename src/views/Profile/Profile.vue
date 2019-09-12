@@ -17,20 +17,20 @@
       </aside>
 
       <!-- Favorties Tab -->
-    <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favInfo">
+    <!-- <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favInfo">
             <h3>Favorite Destinations</h3> 
         <Favorites/>
-    </section>
+    </section> -->
       <!-- Favorties Activities -->
     <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="favActivitiesInfo">
         <FavoriteActivities/>
 
       </section>
       <!-- Past Trips Tab -->
-        <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pastInfo">
+        <!-- <section class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="pastInfo">
           <h3>Past Trips</h3>
         <PastTrips/>
-      </section>
+      </section> -->
     </article>
   </div>
 </template>
