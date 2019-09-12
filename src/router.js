@@ -5,7 +5,7 @@ import Destination from './views/Destination';
 import Activities from './views/Activities';
 import Profile from './views/Profile/Profile';
 import Chat from './views/Chat';
-
+// import Trips from './views/Trips/Trips'
 
 Vue.use(Router);
 

@@ -3,7 +3,7 @@
 
     <section class="datePick-section">
 
-      <md-datepicker v-model="selectedDate" class="departure" @keyup.enter='submit'>
+      <md-datepicker v-model="selectedDate" class="departure" @click.native='submit'>
             <label class="date">Select Departure date</label>
           </md-datepicker> 
 
@@ -35,13 +35,20 @@ export default {
   },
     methods: {
     submit: function() {
-      this.$emit("departure", this.data.$route.selectedDate);
+      // console.log("hello");
+      this.$emit("departure", this.selectedDate);
       this.$store.commit({
         type: "changeDeparture",
-        newDate: this.data.$route.selectedDate
+        newDate: this.selectedDate
       });
 
       this.selectedDate = '';
+    }
+  },
+  updated() {
+    if(this.selectedDate !== null){
+      const date = this.selectedDate;
+      console.log("hello!", date);
     }
   }
   
