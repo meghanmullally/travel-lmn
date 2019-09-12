@@ -25,13 +25,13 @@
     <md-card>
       <md-card-media>
         <md-ripple>
-        <img src="./assets/images/lance-anderson-uevmkfCH98Q-unsplash.jpg" alt="Chicago Bean">
+        <img src="./assets/images/george-brits-wvO5tPfTpug-unsplash.jpg" alt="Zebras in the wild">
         </md-ripple>
       </md-card-media>
 
       <md-card-actions>
         <md-card-header>
-            <span class="md-title">Chicago</span>
+            <span class="md-title">South Africa</span>
             <span class="md-subhead"></span>
           </md-card-header>
         <md-button class="md-icon-button">
@@ -43,13 +43,14 @@
     <md-card>
       <md-card-media>
         <md-ripple>
-        <img src="./assets/images/tim-foster-o4mP43oPGHk-unsplash.jpg" alt="San Fran Golden Gate Bridge">
+        <img src="./assets/images/oakie-dpVJtfywdX4-unsplash.jpg" alt="Seattle Skyline with Space Needle">
         </md-ripple>
       </md-card-media>
+
       <md-card-actions>
         <md-card-header>
-            <span class="md-title">San Francisco</span>
-            <span class="md-subhead"></span>
+            <span class="md-title">Seattle</span>
+            <!-- <span class="md-subhead"> Washington</span> -->
           </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
@@ -60,14 +61,13 @@
     <md-card>
       <md-card-media>
         <md-ripple>
-        <img src="./assets/images/oakie-dpVJtfywdX4-unsplash.jpg" alt="Seattle Skyline with Space Needle">
+        <img src="./assets/images/dan-freeman-7Zb7kUyQg1E-unsplash.jpg" alt="Sydney Opera House bird's eye view from the water">
         </md-ripple>
       </md-card-media>
-
       <md-card-actions>
         <md-card-header>
-            <span class="md-title">Seattle</span>
-            <!-- <span class="md-subhead"> Washington</span> -->
+            <span class="md-title">Sydney</span>
+            <span class="md-subhead"></span>
           </md-card-header>
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
