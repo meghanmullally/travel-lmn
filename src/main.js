@@ -10,8 +10,10 @@ import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
 // import VueCarousel from 'vue-carousel';
 // Vue.use(VueCarousel);
+
 import Unsplash from 'unsplash-js';
 import VueYouTubeEmbed from 'vue-youtube-embed';
+import * as VueGoogleMaps from "vue2-google-maps";
 
 
 
@@ -41,6 +43,13 @@ Vue.use(VueYouTubeEmbed);
 const unsplash = new Unsplash({
   applicationId: "VUE_APP_UNSPLASH_ACCESS_KEY",
   secret: "VUE_APP_UNSPLASH_APP_SECRET"
+});
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "VUE_APP_GOOGLE_MAP_KEY",
+    libraries: "places" // necessary for places input
+  }
 });
 
 
