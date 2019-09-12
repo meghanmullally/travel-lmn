@@ -6,7 +6,7 @@
       <label class="destination"><i class="material-icons">
 flight
 </i> EX: LAX </label>
-      <md-input v-model="initial"  type="text" placeholder="Destination, airport">
+      <md-input v-model="initial"  type="text" placeholder="Destination, airport" @keyup.enter='submit'>
       </md-input>
     </md-field>
 
@@ -23,6 +23,17 @@ export default {
   data() {
     return {
     msg: 'DestinationPicker'
+    }
+  },
+    methods: {
+    submit: function() {
+      this.$emit("destination", this.initial);
+      this.$store.commit({
+        type: "changeDestination",
+        newCity: this.initial
+      });
+
+      this.initial = '';
     }
   }
 };
