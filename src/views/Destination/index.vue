@@ -19,6 +19,7 @@
 // import ToolBar from '../../components/ToolBar/ToolBar';
 import PopularDestination from '../../components/PopularDestinations/PopularDestination';
 import PriceContainer from '../../components/PriceContainer/Price';
+import API from '../../utils/API';
 
 export default {
   name: 'Destination',
@@ -27,12 +28,23 @@ export default {
     PopularDestination,
     PriceContainer,
     },
-  date(){
+  data(){
     return {
-      msg: "Destination page"
-  }
-  }
+      msg: "Destination page",
+      flightInfo:{
+        origin: this.$store.getters.origin,
+        destination: this.$store.getters.destination
+      }
+  }},
+  mounted(){
+    const flightStuff =[];
+    flightStuff.push(this.flightInfo);
+    API.getItinerary(flightStuff).then(res => {
+      console.log(res);
+    }).catch(err => console.log(err))
+  },
 }
+    
 </script>
 <style>
     @import './assets/styles/style.css';
