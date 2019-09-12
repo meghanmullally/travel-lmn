@@ -4,12 +4,8 @@ import Home from './views/Home';
 import Destination from './views/Destination';
 import Activities from './views/Activities';
 import Profile from './views/Profile/Profile';
-<<<<<<< HEAD
 import Trips from './views/Trips/Trips';
 // import Chat from './views/Chat/Chat';
-=======
-import Chat from './views/Chat';
->>>>>>> b8b6c6fa00b47d79e2cfe2c47ebcac7854b78b02
 
 
 Vue.use(Router);
