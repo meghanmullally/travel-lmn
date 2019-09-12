@@ -11,6 +11,10 @@ export default {
       msg: "Activies page"
   }
   }
+
+// possible activities api?! 
+// https://www.triposo.com/api/documentation/20190906/
+
 }
 </script>
 <style>
