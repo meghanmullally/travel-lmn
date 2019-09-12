@@ -8,8 +8,7 @@ import moment from 'moment';
 import { MdDatepicker, MdButton, MdField, MdList, MdIcon, MdToolbar, MdDrawer, MdLayout, MdCard, MdDivider, MdTable, MdContent, MdRipple, MdElevation, MdTabs, MdSubheader, MdSteppers} from 'vue-material/dist/components'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
-// import VueCarousel from 'vue-carousel';
-// Vue.use(VueCarousel);
+
 
 import Unsplash from 'unsplash-js';
 import VueYouTubeEmbed from 'vue-youtube-embed';

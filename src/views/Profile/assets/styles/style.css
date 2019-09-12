@@ -10,13 +10,26 @@
   padding: 0 auto;
 } */
 
+
+#tabs-container {
+  display: flex;
+  /* align-items: baseline; */
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin: 25px;
+  padding: 0 auto;
+}
+
 #userInfo {
-  float: right;
+  /* float: left;
   width: 348px;
   height: auto;
   margin: 25px;
-  padding: 0 auto; 
-  /* display: flex;
+  padding: 0 auto;  */
+  display: flex;
   align-items: baseline;
   align-content: center;
   justify-content: center;
@@ -25,7 +38,7 @@
   width: 100%;
   height: auto;
   margin: 25px;
-  padding: 0 auto; */
+  padding: 0 auto;
 }
 
 #favActivitiesInfo {
@@ -45,4 +58,18 @@
   height: auto; 
   margin: 25px;
   padding: 0 auto; */
+}
+
+#tab-home {
+  /* background-color: rgb(234, 246, 250); */
+}
+/* 
+div.md-tabs {
+  border: solid rgb(234, 246, 250) 5px;
+  background-color: rgba(250, 250, 132, 0.822);
+} */
+
+button.md-button {
+  color: black;
+  font-weight: bold;
 }

@@ -2,9 +2,9 @@
   <div class="user">
     <!-- <article class="container">  -->
     <!-- <div Profile Info --> 
-    <!-- <md-toolbar :md-elevation="0">
+    <md-toolbar :md-elevation="0">
         <span class="md-title">User Info</span>
-      </md-toolbar> -->
+      </md-toolbar>
       <md-list class="md-double-line">
         <!-- user's name -->
       <md-subheader>Name</md-subheader>
@@ -41,7 +41,12 @@
             <span>Work</span>
           </div>
         </md-list-item>
-      </md-list>    
+      </md-list>  
+
+
+
+      
+        
   </div>
 </template>
 <script>
