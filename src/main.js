@@ -10,6 +10,8 @@ import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
 // import VueCarousel from 'vue-carousel';
 // Vue.use(VueCarousel);
+import Unsplash from 'unsplash-js';
+
 
 
 Vue.use(MdDatepicker);
@@ -35,9 +37,17 @@ Vue.use(VueAxios, axios);
 Vue.use(Vuex);
 
 
+const unsplash = new Unsplash({
+  applicationId: "VUE_APP_UNSPLASH_ACCESS_KEY",
+  secret: "VUE_APP_UNSPLASH_APP_SECRET"
+});
+
+
 Vue.prototype.moment = moment
+Vue.prototype.unsplash = unsplash;
 
 Vue.config.productionTip = false
+
 
 export const store = new Vuex.Store({
   state: {
