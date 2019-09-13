@@ -1,22 +1,22 @@
 <template>
   <div class="Destination">
-    <!-- navigation  -->
-    <!-- <ToolBar/> -->
     <!-- Destination content -->
-    <article class="container">
     <section class="md-layout md-gutter md-alignment-center" id="desContent">
       <h3 class="popHeader">Popular Destinations</h3>
       <PopularDestination/>
     </section>
+
+    <!-- Flight Content  -->
       <section class="md-layout md-gutter md-alignment-space-around-center" id="desFlightOptions">
-        <!-- <h3 class="flightHeader">Flight Options</h3> -->
+        <!-- <h3 class="flightHeader"> Departure Flight Options</!--> 
       <PriceContainer/>
+    </section>
+    <section class="md-layout md-gutter md-alignment-space-around-center" id="desReturnOptions">
+        <!-- <h3 class="flightHeader">Return Flight Options</h3> -->
     <ReturnFlight/>
     </section>
   
-    
-    </article>
-  </div>
+      </div>
 </template>
 <script>
 import PopularDestination from '../../components/PopularDestinations/PopularDestination';

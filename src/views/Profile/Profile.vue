@@ -1,21 +1,7 @@
 <template>
   <div class="Profile">
-    <!-- <ToolBar/> -->
       <!-- everything container  -->
     <article class="everything md-layout md-gutter md-alignment-center">
-
-  <md-tabs class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" md-alignment="centered" id="tabs-container">
-      <md-tab id="tab-home" md-label="User Info">
-        <!-- User info container  -->
-      
-        <!-- <UserInfo/> -->
-    
-      </md-tab>
-      <md-tab id="tab-pages" md-label="Itinerary"></md-tab>
-      <md-tab id="tab-posts" md-label="Activity Plans"></md-tab>
-      <md-tab id="tab-favorites" md-label="Favorites"></md-tab>
-    </md-tabs>
-
       <!-- User info container  -->
       <aside class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100" id="userInfo">
         <UserInfo/>

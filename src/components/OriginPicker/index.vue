@@ -22,7 +22,8 @@ export default {
   },
   data() {
     return {
-    msg: 'OriginPicker'
+    msg: 'OriginPicker',
+    initial: null,
     }
   },
   methods: {
