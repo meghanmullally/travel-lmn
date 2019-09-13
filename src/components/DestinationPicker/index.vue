@@ -21,7 +21,8 @@ export default {
   },
   data() {
     return {
-    msg: 'DestinationPicker'
+    msg: 'DestinationPicker',
+    initial: null,
     }
   },
     methods: {

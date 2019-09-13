@@ -42,9 +42,6 @@
           </div>
         </md-list-item>
       </md-list>  
-
-
-
       
         
   </div>
