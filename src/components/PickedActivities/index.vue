@@ -1,8 +1,7 @@
 <template>
   <div class="PickedActivities">
-    <h4>Picked Activities</h4>
+    <h4>Activity Plans</h4>
     <md-card md-with-hover class="collection">
-        <md-ripple>
       <md-card-header class="collection-header">
         <md-card-header class="collection-item avatar">
           <img src="./assets/images/marten-newhall-uAFjFsMS3YY-unsplash.jpg" alt="blue suit man with magnifying glass" class="circle">
@@ -21,7 +20,6 @@
       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
         </md-card-header>
       </md-card-header>
-        </md-ripple>
   </md-card>
 
   </div>
