@@ -40,13 +40,13 @@ Vue.use(Vuex);
 Vue.use(VueYouTubeEmbed);
 
 const unsplash = new Unsplash({
-  applicationId: "VUE_APP_UNSPLASH_ACCESS_KEY",
-  secret: "VUE_APP_UNSPLASH_APP_SECRET"
+  applicationId: process.env.VUE_APP_UNSPLASH_ACCESS_KEY,
+  secret: process.env.VUE_APP_UNSPLASH_APP_SECRET
 });
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "VUE_APP_GOOGLE_MAP_KEY",
+    key: process.env.VUE_APP_GOOGLE_MAP_KEY,
     libraries: "places" // necessary for places input
   }
 });
