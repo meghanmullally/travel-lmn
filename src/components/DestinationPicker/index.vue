@@ -5,7 +5,7 @@
 <md-field>
       <label class="destination">
         EX: LAX </label>
-      <md-input v-model="initial"  type="text" placeholder="Destination, airport" @keyup.enter="submit">
+      <md-input v-model="initial"  type="text" placeholder="Destination, airport" @keydown.tab="submit">
       </md-input>
     </md-field>
 
