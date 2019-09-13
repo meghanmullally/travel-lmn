@@ -5,7 +5,7 @@
 <md-field>
       <label class="origin">
         EX: SEA </label>
-      <md-input v-model="initial"  type="text" placeholder="Origin, airport" @keyup.enter="submit">
+      <md-input v-model="initial"  type="text" placeholder="Origin, airport" @keydown.tab="submit">
       </md-input>
     </md-field>
 
