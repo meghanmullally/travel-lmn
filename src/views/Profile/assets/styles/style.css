@@ -72,4 +72,7 @@ div.md-tabs {
 button.md-button {
   color: black;
   font-weight: bold;
+  border: solid rgb(234, 246, 250) 5px;
+  background-color:  rgb(234, 246, 250);
+  
 }
