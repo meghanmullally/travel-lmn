@@ -1,23 +1,22 @@
 <template>
   <div class="Activities">
     <!-- <h1>This is the Youtube and Map page?</h1> -->
-    <YoutubeContainer/>
-    <!-- <VideoContainer/> -->
-    <!-- <GoogleMap/> -->
-    <!-- <youtube :video-id="videoId1" player-width="275" player-height="750"></youtube> -->
+    <YoutubeContainer :id='videoId1'/>
+    <GoogleMap/>
+
   </div>
 </template>
 <script>
 
 import GoogleMap from '../../components/GoogleMap/Map';
 import YoutubeContainer from '../../components/YoutubeContainer';
-
+import axios from 'axios';
 
 export default {
   name: 'Activities',
   components: {
     YoutubeContainer,
-    // GoogleMap
+    GoogleMap
   },
   data(){
     return {
@@ -25,8 +24,32 @@ export default {
       videoIds: [],
       videoId1: "",
       queryCountry: this.$store.getters.destinationName //this.city
-  }
+    }
+  },
+  mounted() {
+    console.log(this.queryCountry, "my cityyyyyy!");
+    axios
+      .get("https://www.googleapis.com/youtube/v3/search", {
+        params: {
+          part: "id,snippet",
+          q: "travel guide " + this.queryCountry,
+          key: process.env.VUE_APP_YOUTUBE_ACCESS_KEY,
+          maxResults: 50
+        }
+      })
+      .then(response => {
+        this.videoIds.length = 0;
+        const results = response.data;
+        console.log(results);
+        for (var i = 0; i < 50; i++) {
+          // this.videoIds.push("https://www.youtube.com/watch?v=" + results.data.items[i].id.videoId);
+          if(results.items[i].id.videoId !== undefined){
+            this.videoIds.push(results.items[i].id.videoId);
+          }
+        }
 
+        this.videoId1 = this.videoIds[0];
+      });
   }
 
 // possible activities api?! 
