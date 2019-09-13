@@ -51,7 +51,7 @@ export default {
     FavoriteActivities,
     PickedActivities
   },
-  date(){
+  data(){
     return {
       msg: "Profile page"
   }

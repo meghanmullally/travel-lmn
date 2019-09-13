@@ -1,25 +1,27 @@
 <template>
-  <div class="youtube">
+  <div id="Youtube">
     <h3>{{info}}</h3>
+  <section>
+    <h2>add options</h2>
+      <youtube :video-id="videoId1" player-width="275" player-height="750"></youtube>
+  </section>
 
   </div>
 </template>
 <script>
+
 import axios from 'axios'
-import VueAxios from 'vue-axios'
-import VueYouTubeEmbed from 'vue-youtube-embed'
+// import VueAxios from 'vue-axios'
+// import VueYouTubeEmbed from 'vue-youtube-embed'
 
 export default {
-  name: "youtube",
+  // name: "Youtube",
   data(){
     return {
       videoIds: [],
-      videoId1: "videoId",
-      videoId2: "",
-      vvideoId3: "",
-      videoId4: "",
-      info: "Suggested Videos to Assist Your Travels",
-      queryCountry: this.$store.getters.destinationName //this.city
+      videoId1: "",
+      info: "Suggested Videos to Assist Your Travels at " + this.$store.getters.destinationName,
+      // queryCountry: this.$store.getters.destinationName //this.city
     };
   },
   mounted() {
@@ -34,21 +36,24 @@ export default {
         }
       })
       .then(response => {
-        var results = response;
+        this.videoIds.length = 0;
+        const results = response.data;
         console.log(results);
-        for (var i = 0; i < 4; i++) {
+        for (var i = 0; i < 50; i++) {
           // this.videoIds.push("https://www.youtube.com/watch?v=" + results.data.items[i].id.videoId);
-          this.videoIds.push(results.data.items[i].id.videoId);
+          if(results.items[i].id.videoId !== undefined){
+            this.videoIds.push(results.items[i].id.videoId);
+          }
         }
 
         this.videoId1 = this.videoIds[0];
-        this.videoId2 = this.videoIds[1];
-        this.videoId3 = this.videoIds[2];
-        this.videoId4 = this.videoIds[3];
+        // this.videoId2 = this.videoIds[1];
+        // this.videoId3 = this.videoIds[2];
+        // this.videoId4 = this.videoIds[3];
       });
   }
 }
 </script>
 <style>
-    @import './style.css';
+    /* @import './style.css'; */
 </style>

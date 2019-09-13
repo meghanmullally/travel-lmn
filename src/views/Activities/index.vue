@@ -2,24 +2,31 @@
   <div class="Activities">
     <!-- <h1>This is the Youtube and Map page?</h1> -->
     <YoutubeContainer/>
-    <GoogleMap/>
+    <!-- <VideoContainer/> -->
+    <!-- <GoogleMap/> -->
+    <!-- <youtube :video-id="videoId1" player-width="275" player-height="750"></youtube> -->
   </div>
 </template>
 <script>
-// import YoutubeContainer from '../../components/YoutubeContainer/Youtube';
+
 import GoogleMap from '../../components/GoogleMap/Map';
 import YoutubeContainer from '../../components/YoutubeContainer';
+
 
 export default {
   name: 'Activities',
   components: {
     YoutubeContainer,
-    GoogleMap
+    // GoogleMap
   },
-  date(){
+  data(){
     return {
-      msg: "Activies page"
+      msg: "Activies page",
+      videoIds: [],
+      videoId1: "",
+      queryCountry: this.$store.getters.destinationName //this.city
   }
+
   }
 
 // possible activities api?! 
