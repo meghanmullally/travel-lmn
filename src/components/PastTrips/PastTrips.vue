@@ -54,7 +54,7 @@
         <md-button class="md-icon-button">
           <md-icon>favorite</md-icon>
         </md-button>
-        </md-button>
+        <!-- </md-button> -->
       </md-card-actions>
     </md-card>
     <!-- Past Trips 4 -->

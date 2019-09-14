@@ -1,11 +1,22 @@
 <template>
-  <div id="Youtube">
-    <h3>{{info}}</h3>
-  <section>
+  <!-- <div id="Youtube"> -->
+    <!-- <h3>{{info}}</h3> -->
+  <!-- <section>
       <youtube :video-id="this.$attrs.id" player-width="275" player-height="750"></youtube>
-  </section>
+  </section> -->
+      <!-- <section class="pastTrips"> -->
+        <!-- <h3>Past Trips</h3> -->
+        <!-- Past Trips 1 -->
+      <md-card>
+      <md-card-media>
+        <md-ripple>
+          <youtube :video-id="this.$attrs.id" player-width="275" player-height="750"></youtube>
+        </md-ripple>
+      </md-card-media>
+    </md-card>
+      <!-- </section> -->
 
-  </div>
+  <!-- </div> -->
 </template>
 <script>
 
@@ -19,7 +30,7 @@ export default {
     return {
       // videoIds: [],
       // videoId1: "",
-      info: "Suggested Videos to Assist Your Travels at " + this.$store.getters.destinationName,
+      // info: "Suggested Videos to Assist Your Travels at " + this.$store.getters.destinationName,
       // queryCountry: this.$store.getters.destinationName //this.city
     };
   },
