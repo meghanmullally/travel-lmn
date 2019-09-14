@@ -31,7 +31,7 @@ export default {
       this.$emit("origin", this.initial);
       this.$store.commit({
         type: "changeOrigin",
-        newCity: this.initial
+        newCity: this.initial.toUpperCase()
       });
 
       this.initial = '';

@@ -46,15 +46,15 @@ export default {
         }
       })
       .then(response => {
-        this.videoIds.length = 0;
+        this.videoIds = {};
         const results = response.data;
         console.log(results);
         for (var i = 0; i < 50; i++) {
-          // this.videoIds.push("https://www.youtube.com/watch?v=" + results.data.items[i].id.videoId);
+
           if (results.items[i].id.videoId !== undefined) {
-            // console.log(i+1);
+
             this.$set(this.videoIds, i + 1, results.items[i].id.videoId);
-            // this.videoIds.push(results.items[i].id.videoId);
+
           }
         }
 
