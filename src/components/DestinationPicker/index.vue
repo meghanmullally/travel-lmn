@@ -30,7 +30,7 @@ export default {
       this.$emit("destination", this.initial);
       this.$store.commit({
         type: "changeDestination",
-        newCity: this.initial
+        newCity: this.initial.toUpperCase()
       });
 
       this.initial = '';

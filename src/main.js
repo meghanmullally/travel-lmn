@@ -97,6 +97,8 @@ export const store = new Vuex.Store({
     origin: state => state.originCity,
     destination: state => state.destinationCity,
     destinationName: state => state.destinationName,
+    departure: state => state.departureDate,
+    return: state => state.returnDate
     // flightInfo: state => state.flightInfo,
   }
 })
