@@ -85,8 +85,8 @@
     }),
     methods: {
       getClass: ({ id }) => ({
-        'md-primary': id === 2,
-        'md-accent': id === 3
+        'md-primary': id%2 === 0,
+        'md-accent': id%2 !== 0
       }),
       onSelect (item) {
         this.selected = item

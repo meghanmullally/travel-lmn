@@ -1,18 +1,20 @@
 <template>
   <div class="Activities">
     <!-- <h1>This is the Youtube and Map page?</h1> -->
-    <YoutubeContainer/>
+    <h3>{{info}}</h3>
+    <section class="videos">
+      <md-card v-for="(value, index) in videoIds" v-bind:key="index">
+        <YoutubeContainer :id="value" />
+      </md-card>
+    </section>
     <!-- <VideoContainer/> -->
     <!-- <GoogleMap/> -->
-    <!-- <youtube :video-id="videoId1" player-width="275" player-height="750"></youtube> -->
 
-<div class="tours-container">
+    <div class="tours-container">
 
-  <Tours/>
+      <Tours/>
 
-</div>
-
-
+    </div>
   </div>
 </template>
 <script>
@@ -20,7 +22,7 @@ import GoogleMap from "../../components/GoogleMap/Map";
 import YoutubeContainer from "../../components/YoutubeContainer";
 import axios from "axios";
 
-import Tours from '../../components/Tours';
+import Tours from "../../components/Tours";
 
 export default {
   name: "Activities",
@@ -32,8 +34,6 @@ export default {
   data() {
     return {
       msg: "Activies page",
-      // videoIds: [],
-      // videoId1: "",
       info:
         "Suggested Videos to Assist Your Travels at " +
         this.$store.getters.destinationName,
@@ -58,14 +58,15 @@ export default {
         const results = response.data;
         console.log(results);
         for (var i = 0; i < 50; i++) {
-        
+          if (results.items[i].id.videoId !== undefined) {
+            this.$set(this.videoIds, i + 1, results.items[i].id.videoId);
+          }
+        }
+      });
   }
-}) 
-  }
-// export ending } 
-}
-
+  // export ending }
+};
 </script>
 <style>
-@import './assets/styles/style.css';
+@import "./assets/styles/style.css";
 </style>
