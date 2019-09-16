@@ -17,19 +17,15 @@ export default {
     axios
     .get("https://www.triposo.com/api/20190906/tour.json?", {
         params: {
-          location_ids: "Seattle",
-          account: {
-            Triposo_account: process.env.VUE_APP_X_Triposo_Account,
-          },
-            token: {
-              Triposo_token:
-              process.env.VUE_APP_X_Triposo_Token,
+        location_ids: "Seattle",
+        account: process.env.VUE_APP_X_Triposo_Account,
+        token: process.env.VUE_APP_X_Triposo_Token,
         }
-        }
-      })
+        })
     .then(response =>(this.info = response))
   }
 }
+  
 </script>
 <style>
 

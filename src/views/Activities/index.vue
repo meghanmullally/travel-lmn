@@ -26,7 +26,7 @@ export default {
   name: "Activities",
   components: {
     YoutubeContainer,
-    // GoogleMap
+    GoogleMap,
     Tours
   },
   data() {
