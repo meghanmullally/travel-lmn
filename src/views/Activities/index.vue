@@ -1,13 +1,18 @@
 <template>
   <div class="Activities">
     <!-- <h1>This is the Youtube and Map page?</h1> -->
-    <h3>{{info}}</h3>
-    <section class='videos'>
-      <md-card  v-for="(value, index) in videoIds" v-bind:key='index'>
-        <YoutubeContainer v-bind="index" :id="value" />
-      </md-card>
-    </section >
-    <GoogleMap />
+    <YoutubeContainer/>
+    <!-- <VideoContainer/> -->
+    <!-- <GoogleMap/> -->
+    <!-- <youtube :video-id="videoId1" player-width="275" player-height="750"></youtube> -->
+
+<div class="tours-container">
+
+  <Tours/>
+
+</div>
+
+
   </div>
 </template>
 <script>
@@ -15,11 +20,14 @@ import GoogleMap from "../../components/GoogleMap/Map";
 import YoutubeContainer from "../../components/YoutubeContainer";
 import axios from "axios";
 
+import Tours from '../../components/Tours';
+
 export default {
   name: "Activities",
   components: {
     YoutubeContainer,
-    GoogleMap
+    GoogleMap,
+    Tours
   },
   data() {
     return {
@@ -50,21 +58,13 @@ export default {
         const results = response.data;
         console.log(results);
         for (var i = 0; i < 50; i++) {
-
-          if (results.items[i].id.videoId !== undefined) {
-
-            this.$set(this.videoIds, i + 1, results.items[i].id.videoId);
-
-          }
-        }
-
-        this.videoId1 = this.videoIds[0];
-      });
+        
   }
+}) 
+  }
+// export ending } 
+}
 
-  // possible activities api?!
-  // https://www.triposo.com/api/documentation/20190906/
-};
 </script>
 <style>
 @import './assets/styles/style.css';
