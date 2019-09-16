@@ -3,9 +3,9 @@
     <!-- <h1>This is the Youtube and Map page?</h1> -->
     <h3>{{info}}</h3>
     <section class="videos">
-      <!-- <md-card v-for="(value, index) in videoIds" v-bind:key="index">
+      <md-card v-for="(value, index) in videoIds" v-bind:key="index">
         <YoutubeContainer :id="value" />
-      </md-card> -->
+      </md-card>
     </section>
     <!-- <VideoContainer/> -->
     <!-- <GoogleMap/> -->
