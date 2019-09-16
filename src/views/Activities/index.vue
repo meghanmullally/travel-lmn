@@ -5,6 +5,14 @@
     <!-- <VideoContainer/> -->
     <!-- <GoogleMap/> -->
     <!-- <youtube :video-id="videoId1" player-width="275" player-height="750"></youtube> -->
+
+<div class="tours-container">
+
+  <Tours/>
+
+</div>
+
+
   </div>
 </template>
 <script>
@@ -13,11 +21,14 @@ import GoogleMap from '../../components/GoogleMap/Map';
 import YoutubeContainer from '../../components/YoutubeContainer';
 
 
+import Tours from '../../components/Tours';
+
 export default {
   name: 'Activities',
   components: {
     YoutubeContainer,
     // GoogleMap
+    Tours
   },
   data(){
     return {
@@ -28,10 +39,6 @@ export default {
   }
 
   }
-
-// possible activities api?! 
-// https://www.triposo.com/api/documentation/20190906/
-
 }
 </script>
 <style>
