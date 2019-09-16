@@ -51,7 +51,6 @@ export default {
       date = date[0].split("");
       date.splice(0,1);
       date = date.join("")
-      console.log("hello!", date);
       this.$emit("departure", date);
       this.$store.commit({
         type: "changeDeparture",

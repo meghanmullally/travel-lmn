@@ -40,16 +40,27 @@ export default {
         destination: this.$store.getters.destination,
         departure: this.$store.getters.departure,
         return: this.$store.getters.return
-      }  
+      },
+      itineraries: '',
+      legs: '',
+      agents: '',
+      carriers: '',
+      segments: '',
+      cities: ''
   }},
   mounted(){
     const flightStuff =[];
     flightStuff.push(this.flightInfo);
     API.getItinerary(flightStuff).then(res => {
-      const flights = [];
-      const cities = res.data.Places;
-      flights.push(res.data);
-      const cityName = cities.filter(city => {
+
+      this.itineraries = res.data.Itineraries;
+      this.legs = res.data.Legs;
+      this.cities = res.data.Places;
+      this.segments = res.data.Segments;
+      this.carriers = res.data.Carriers;
+      this.agents = res.data.Agents;
+
+      const cityName = this.cities.filter(city => {
         if(city.Type === "City" && city.Code === this.$store.getters.destination){
           console.log(city.Name);
           this.$emit("destinationName");
