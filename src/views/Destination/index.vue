@@ -37,8 +37,10 @@ export default {
       msg: "Destination page",
       flightInfo:{
         origin: this.$store.getters.origin,
-        destination: this.$store.getters.destination
-      }
+        destination: this.$store.getters.destination,
+        departure: this.$store.getters.departure,
+        return: this.$store.getters.return
+      }  
   }},
   mounted(){
     const flightStuff =[];

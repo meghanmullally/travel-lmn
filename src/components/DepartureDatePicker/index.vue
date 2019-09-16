@@ -46,9 +46,19 @@ export default {
     }
   },
   updated() {
-    if(this.selectedDate !== null){
-      const date = this.selectedDate;
+    if(this.selectedDate !== null && this.selectedDate !==""){
+      let date = (JSON.stringify(this.selectedDate)).split("T");
+      date = date[0].split("");
+      date.splice(0,1);
+      date = date.join("")
       console.log("hello!", date);
+      this.$emit("departure", date);
+      this.$store.commit({
+        type: "changeDeparture",
+        newDate: date
+      });
+
+      this.selectedDate = '';
     }
   }
   

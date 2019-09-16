@@ -13,10 +13,12 @@ export default {
   data() {
     return {
     msg: 'HomeButton',
-      flightInfo:{
-        origin: this.$store.getters.origin,
-        destination: this.$store.getters.destination
-      }    
+      // flightInfo:{
+      //   origin: this.$store.getters.origin,
+      //   destination: this.$store.getters.destination,
+      //   departure: this.$store.getters.departure,
+      //   return: this.$store.getters.return
+      // }    
     }
   },
 
