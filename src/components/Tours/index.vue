@@ -22,7 +22,9 @@ export default {
         token: process.env.VUE_APP_X_Triposo_Token,
         }
         })
-    .then(response =>(this.info = response))
+    .then(response => {
+      console.log(response);
+    })
   }
 }
   
