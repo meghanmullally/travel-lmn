@@ -8,13 +8,18 @@
       </md-card>
     </section>
     <!-- <VideoContainer/> -->
-    <!-- <GoogleMap/> -->
 
     <h3>{{msg}}</h3>
     <div class="tours-container">
       <md-card v-for="(value, index) in tourIds" v-bind:key="index">
         <Tours :title="value.title" :link="value.link" :money="value.money" :curr="value.curr" :info="value.info" :rating="value.rating"/>
       </md-card>
+
+<div class="map-container">
+
+    <GoogleMap/>
+
+</div>
 
     </div>
   </div>
