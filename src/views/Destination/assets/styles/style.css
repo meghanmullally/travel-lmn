@@ -8,17 +8,7 @@ h3 {
   /* font-weight: bold; */
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  align-content: baseline;
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-#desFlightOptions  {
+#desFlightOptions, #desReturnOptions   {
   display: flex;
   align-items: baseline;
   align-content: center;
@@ -28,7 +18,20 @@ h3 {
   width: 100%;
   height: auto;
   margin: 25px;
-  /* padding: 0 auto; */
+  padding: 0 auto;
+}
+
+/* Card Sizing and Content  */
+#desContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap; 
+  align-content: baseline;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow: visible;
 }
 
 #desItems {
@@ -42,12 +45,12 @@ h3 {
   margin-right: 0;
   margin-left: 0;
   /* padding: 0; */
-  width: 300px;
+  width: 375px;
   height: auto;
 }
 
-.desCard {
+/* .desCard {
   width: 100%;
   height: auto;
-}
+} */
 

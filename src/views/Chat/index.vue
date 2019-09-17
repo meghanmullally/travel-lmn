@@ -6,7 +6,7 @@
 <script>
 export default {
   name: 'Chat',
-  date(){
+  data(){
     return {
       msg: "Chat page"
   }

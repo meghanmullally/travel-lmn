@@ -6,10 +6,11 @@
       </md-table-toolbar>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }" :class="getClass(item)" md-selectable="single">
-        <!-- <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.id }}</md-table-cell> -->
+        <!-- <md-table-cell md-label="Id" md-sort-by="id">{{ item.id }}</md-table-cell> -->
         <md-table-cell md-label="Airline" md-sort-by="airline">{{ item.airline }}</md-table-cell>
         <md-table-cell md-label="Flight" md-sort-by="flight">{{ item.flight }}</md-table-cell>
         <md-table-cell md-label="Duration" md-sort-by="duration">{{ item.time }}</md-table-cell>
+        <md-table-cell md-label="Layover" md-sort-by="layover" md-numeric>{{ item.id }}</md-table-cell>
         <md-table-cell md-label="Departure" md-sort-by="departure">{{ item.departure }}</md-table-cell>
         <md-table-cell md-label="Return" md-sort-by="return">{{ item.return }}</md-table-cell>
         <md-table-cell md-label="Price" md-sort-by="price">{{ item.price }}</md-table-cell>
@@ -85,8 +86,8 @@
     }),
     methods: {
       getClass: ({ id }) => ({
-        'md-primary': id === 2,
-        'md-accent': id === 3
+        'md-primary': id%2 === 0,
+        'md-accent': id%2 !== 0
       }),
       onSelect (item) {
         this.selected = item

@@ -31,6 +31,21 @@ export default {
     childData: "",
     selectedDate: null
     }
+  },
+  updated() {
+    if(this.selectedDate !== null && this.selectedDate !==""){
+      let date = (JSON.stringify(this.selectedDate)).split("T");
+      date = date[0].split("");
+      date.splice(0,1);
+      date = date.join("")
+      this.$emit("return", date);
+      this.$store.commit({
+        type: "changeReturn",
+        newDate: date
+      });
+
+      this.selectedDate = '';
+    }
   }
 };
 </script>

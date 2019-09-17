@@ -5,7 +5,7 @@
 <md-field>
       <label class="origin">
         EX: SEA </label>
-      <md-input v-model="initial"  type="text" placeholder="Origin, airport" @keyup.enter="submit">
+      <md-input v-model="initial"  type="text" placeholder="Origin, airport" @keydown.tab="submit">
       </md-input>
     </md-field>
 
@@ -22,7 +22,8 @@ export default {
   },
   data() {
     return {
-    msg: 'OriginPicker'
+    msg: 'OriginPicker',
+    initial: null,
     }
   },
   methods: {
@@ -30,7 +31,7 @@ export default {
       this.$emit("origin", this.initial);
       this.$store.commit({
         type: "changeOrigin",
-        newCity: this.initial
+        newCity: this.initial.toUpperCase()
       });
 
       this.initial = '';

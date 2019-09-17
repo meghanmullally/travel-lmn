@@ -1,6 +1,5 @@
 <template>
   <div class="Profile">
-    <!-- <ToolBar/> -->
       <!-- everything container  -->
     <article class="everything md-layout md-gutter md-alignment-center">
       <!-- User info container  -->
@@ -38,7 +37,7 @@ export default {
     FavoriteActivities,
     PickedActivities
   },
-  date(){
+  data(){
     return {
       msg: "Profile page"
   }
