@@ -12,7 +12,7 @@
 
     <div class="tours-container">
 
-      <Tours/>
+      <!-- <Tours/> -->
 
     </div>
   </div>

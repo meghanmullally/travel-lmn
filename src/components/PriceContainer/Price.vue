@@ -6,7 +6,7 @@
       </md-table-toolbar>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }" :class="getClass(item)" md-selectable="single">
-        <!-- <md-table-cell md-label="Id" md-sort-by="id">{{ item.id }}</md-table-cell> -->
+        <md-table-cell md-label="Id" md-sort-by="id">{{ item.id }}</md-table-cell>
         <md-table-cell md-label="Airline" md-sort-by="airline">{{ item.airline }}</md-table-cell>
         <md-table-cell md-label="Flight" md-sort-by="flight">{{ item.flight }}</md-table-cell>
         <md-table-cell md-label="Duration" md-sort-by="duration">{{ item.time }}</md-table-cell>
