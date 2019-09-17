@@ -11,10 +11,10 @@
         <!-- <h3 class="flightHeader"> Departure Flight Options</!--> 
       <PriceContainer/>
     </section>
-    <section class="md-layout md-gutter md-alignment-space-around-center" id="desReturnOptions">
+    <!-- <section class="md-layout md-gutter md-alignment-space-around-center" id="desReturnOptions"> -->
         <!-- <h3 class="flightHeader">Return Flight Options</h3> -->
-    <ReturnFlight/>
-    </section>
+    <!-- <ReturnFlight/> -->
+    <!-- </section> -->
   
       </div>
 </template>
@@ -46,7 +46,9 @@ export default {
       agents: '',
       carriers: '',
       segments: '',
-      cities: ''
+      cities: '',
+      // flightObject: {},
+      departArray: []
   }},
   mounted(){
     const flightStuff =[];
@@ -60,6 +62,7 @@ export default {
       this.carriers = res.data.Carriers;
       this.agents = res.data.Agents;
 
+      const depart = this.getDepartures;
       const cityName = this.cities.filter(city => {
         if(city.Type === "City" && city.Code === this.$store.getters.destination){
           console.log(city.Name);
@@ -74,6 +77,81 @@ export default {
       console.log(res);
     }).catch(err => console.log(err))
   },
+  computed: {
+    getDepartures: function () {
+      let flightObject = {};
+      let id = 1;
+      let airline = '';
+      let flightArray = [];
+      let time = '';
+      let departTime = '';
+      let arrivalTime = '';
+      let layOver = 0;
+      let carrierIds = ''
+      this.itineraries.filter(itinerary => {
+        // console.log(id, "what is id");
+        
+        if(itinerary.OutboundLegId !== undefined){
+          let outboundId = itinerary.OutboundLegId;
+          // console.log("outbound id", outboundId);
+          this.legs.filter(leg => {
+            if(leg.Id === outboundId){
+              console.log("am i here?");
+              layOver = leg.Stops.length;
+              arrivalTime = leg.Arrival;
+              departTime = leg.Departure;
+              time = leg.Duration;
+
+              carrierIds = leg.Carriers;              
+
+              this.carriers.filter(carrier => {
+                if(carrier.Ids === carrierIds){
+                  airline = carrier.Name;
+                }
+              })
+              
+              leg.FlightNumbers.filter(flightNumber => {
+                if(flightNumber.FlightNumber !== undefined){
+                  flightArray.push(flightNumber.FlightNumber)
+                }
+              })
+
+            }
+          })
+
+        }
+
+        if(itinerary.InboundLegId !== undefined){
+          let inboundId = itinerary.InboundLegId;
+          // console.log("what is inbound id? ", inboundId);
+        }
+
+        flightObject = {
+          "id": id,
+          "price": itinerary.PricingOptions[0].Price,
+          "layover": layOver,
+          "departure time": departTime,
+          "arrival time": arrivalTime,
+          "time": time,
+          "airline": airline
+        }
+
+        this.departArray.push(flightObject);
+
+        //         {
+        //   id: 1,
+        //   airline: "Alaska Arlines",
+        //   flight: "38",
+        //   time: "13:09",
+        //   departure: "09/10/2019",
+        //   return: "09/13/2019",
+        //   price: "$480"
+        // }
+
+        id++;
+      })
+    }
+  }
 }
     
 </script>
