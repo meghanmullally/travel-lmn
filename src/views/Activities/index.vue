@@ -11,9 +11,9 @@
     <!-- <GoogleMap/> -->
 
     <div class="tours-container">
-      <md-card v-for="(value, index) in tourIds" v-bind:key="index">
+      <!-- <md-card v-for="(value, index) in tourIds" v-bind:key="index">
         <Tours :id="value"/>
-      </md-card>
+      </md-card> -->
 
       <Tours/>
 
@@ -67,25 +67,25 @@ export default {
           }
         }
       });
-      // Triposo API 
-    axios
-    .get("https://www.triposo.com/api/20190906/tour.json?", {
-        params: {
-        location_ids: "Seattle",
-        account: process.env.VUE_APP_X_Triposo_Account,
-        token: process.env.VUE_APP_X_Triposo_Token,
-        }
-        })
-    .then(response => {
-      this.tourIds = {};
-      const results = response.data;
-      console.log(results);
-      for (var j = 0; j < 10; j++) {
-        if (results[j].id.tourIds !== undefined) {
-          this.$set(this.tourIds, j + 1, results[j].id.tourIds);
-        }
-      }
-    });
+    //   // Triposo API 
+    // axios
+    // .get("https://www.triposo.com/api/20190906/tour.json?", {
+    //     params: {
+    //     location_ids: "Seattle",
+    //     account: process.env.VUE_APP_X_Triposo_Account,
+    //     token: process.env.VUE_APP_X_Triposo_Token,
+    //     }
+    //     })
+    // .then(response => {
+    //   this.tourIds = {};
+    //   const results = response.data;
+    //   console.log(results);
+    //   for (var j = 0; j < 10; j++) {
+    //     if (results[j].id.tourIds !== undefined) {
+    //       this.$set(this.tourIds, j + 1, results[j].id.tourIds);
+    //     }
+    //   }
+    // });
   }
   // export ending }
 };
