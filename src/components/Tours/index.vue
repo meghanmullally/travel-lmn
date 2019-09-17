@@ -1,12 +1,9 @@
 <template>
   <div class="tours">
-<md-card v-for="(value, index) in tourIds" v-bind:key="index">
 
-</md-card>
-
-<md-card>
+<md-card :tour-id="this.$attrs.id" >
       <md-card-media>
-        <img src="/assets/examples/card-image-1.jpg" alt="People">
+        <img src="{this.$attr.images}" alt="tour image">
       </md-card-media>
 
       <md-card-header>
@@ -26,8 +23,8 @@
         </md-card-actions>
 
         <md-card-expand-content>
-          <md-card-content>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.
+          <md-card-content >
+          
           </md-card-content>
         </md-card-expand-content>
       </md-card-expand>
@@ -41,23 +38,30 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      msg: "tours",
-      info: "Suggested Tours to Assist Your Travels at "
+      // msg: "tours",
+      // info: "Suggested Tours to Assist Your Travels at "
     }
   },
-  mounted () {
-    axios
-    .get("https://www.triposo.com/api/20190906/tour.json?", {
-        params: {
-        location_ids: "Seattle",
-        account: process.env.VUE_APP_X_Triposo_Account,
-        token: process.env.VUE_APP_X_Triposo_Token,
-        }
-        })
-    .then(response => {
-      console.log(response);
-    })
-  }
+  // mounted () {
+  //   axios
+  //   .get("https://www.triposo.com/api/20190906/tour.json?", {
+  //       params: {
+  //       location_ids: "Seattle",
+  //       account: process.env.VUE_APP_X_Triposo_Account,
+  //       token: process.env.VUE_APP_X_Triposo_Token,
+  //       }
+  //       })
+  //   .then(response => {
+  //     this.tourIds = {};
+  //     const results = response.data;
+  //     console.log(results);
+  //     for (var i = 0; i < 10; i++) {
+  //       if (results.items[i].id.tourIds !== undefined) {
+  //         this.$set(this.tourIds, i + 1, results.items[i].id.tourIds);
+  //       }
+  //     }
+  //   });
+  // }
 }
   
 </script>

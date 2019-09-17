@@ -15,7 +15,7 @@
         <Tours :id="value"/>
       </md-card>
 
-      <!-- <Tours/> -->
+      <Tours/>
 
     </div>
   </div>
@@ -41,8 +41,9 @@ export default {
         "Suggested Videos to Assist Your Travels at " +
         this.$store.getters.destinationName,
       videoIds: {},
-      queryCountry: this.$store.getters.destinationName //this.city
+      queryCountry: this.$store.getters.destinationName, //this.city
       // queryCountry: "Las Vegas" //so that you can see the videos pop up
+      tourIds: {}
     };
   },
   mounted() {
@@ -66,6 +67,25 @@ export default {
           }
         }
       });
+      // Triposo API 
+    axios
+    .get("https://www.triposo.com/api/20190906/tour.json?", {
+        params: {
+        location_ids: "Seattle",
+        account: process.env.VUE_APP_X_Triposo_Account,
+        token: process.env.VUE_APP_X_Triposo_Token,
+        }
+        })
+    .then(response => {
+      this.tourIds = {};
+      const results = response.data;
+      console.log(results);
+      for (var j = 0; j < 10; j++) {
+        if (results[j].id.tourIds !== undefined) {
+          this.$set(this.tourIds, j + 1, results[j].id.tourIds);
+        }
+      }
+    });
   }
   // export ending }
 };
