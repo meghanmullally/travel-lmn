@@ -11,8 +11,11 @@
     <!-- <GoogleMap/> -->
 
     <div class="tours-container">
+      <md-card v-for="(value, index) in tourIds" v-bind:key="index">
+        <Tours :id="value"/>
+      </md-card>
 
-      <Tours/>
+      <!-- <Tours/> -->
 
     </div>
   </div>
