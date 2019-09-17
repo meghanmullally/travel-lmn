@@ -10,13 +10,11 @@
     <!-- <VideoContainer/> -->
     <!-- <GoogleMap/> -->
 
-<h3>{{msg}}</h3>
+    <h3>{{msg}}</h3>
     <div class="tours-container">
       <md-card v-for="(value, index) in tourIds" v-bind:key="index">
         <Tours :title="value.title" :link="value.link" :money="value.money" :curr="value.curr" :info="value.info" :rating="value.rating"/>
       </md-card>
-
-      <!-- <Tours/> -->
 
     </div>
   </div>
@@ -41,13 +39,11 @@ export default {
       videoInfo:
         "Suggested Videos to Assist Your Travels at " +
         this.$store.getters.destinationName,
-      videoIds: {},
-      queryCountry: this.$store.getters.destinationName, //this.city
-      // queryCountry: "Las Vegas" //so that you can see the videos pop up
       msg: "Suggested Tours to Assist Your Travels at " +
         this.$store.getters.destinationName,
+      videoIds: {},
+      queryCountry: this.$store.getters.destinationName, //this.city
       info: null,
-      // queryCountry: this.$store.getters.destinationName,
       title: null,
       money: null,
       curr: null,
