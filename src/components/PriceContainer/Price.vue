@@ -1,6 +1,7 @@
 <template>
   <div class="Price">
-    <md-table class="priceTable" v-model="flights" md-card @md-selected="onSelect" md-sort="airline" md-sort-order="asc">
+    <!-- <md-table class="priceTable" v-model="flights" md-card @md-selected="onSelect" md-sort="airline" md-sort-order="asc"> -->
+    <md-table class="priceTable" v-model="flights" @md-selected="onSelect" md-sort="airline" md-sort-order="asc" md-fixed-header>
       <md-table-toolbar>
         <h1 class="md-title">Departure Options</h1>
       </md-table-toolbar>
