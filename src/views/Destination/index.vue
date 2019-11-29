@@ -7,7 +7,7 @@
     </section>
 
     <!-- Flight Content  -->
-      <section class="md-layout md-gutter md-alignment-space-around-center" id="desFlightOptions">
+    <section class="md-layout md-gutter md-alignment-space-around-center" id="desFlightOptions">
         <!-- <h3 class="flightHeader"> Departure Flight Options</!--> 
       <PriceContainer/>
     </section>
@@ -96,12 +96,12 @@ export default {
           // console.log("outbound id", outboundId);
           this.legs.filter(leg => {
             if(leg.Id === outboundId){
-              console.log("am i here?");
               layOver = leg.Stops.length;
               arrivalTime = leg.Arrival;
               departTime = leg.Departure;
               time = leg.Duration;
 
+              console.log(layOver,"lay over");
               carrierIds = leg.Carriers;              
 
               this.carriers.filter(carrier => {
